@@ -1,0 +1,21 @@
+{{ partial "header" . }}
+<section class="container">
+	<h4>About</h4>
+</section>
+<section class="container">
+	<h4>Blog</h4>
+	<ul>
+	{{- range where .Pages "Section" "blog" -}}
+		<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+	{{- end -}}
+	</ul>
+</section>
+<section class="container">
+	<h4>Work</h4>
+	<ul>
+	{{- range where .Pages "Section" "work" -}}
+		<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+	{{- end -}}
+	</ul>
+</section>
+{{ partial "footer" . }}
