@@ -103,7 +103,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #444;
 }
 
@@ -115,6 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
   font-weight: 300;
   color: #222;
+  font-family: 'Raleway', sans-serif;
 }
 h1 {
   font-size: 4.0rem;
@@ -347,11 +348,13 @@ code {
   background: #f1f1f1;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
+  font-family: 'Fira Mono', monospace;
 }
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
   white-space: pre;
+  font-family: 'Fira Mono', monospace;
 }
 kbd {
   padding: .2rem .5rem;
@@ -362,6 +365,7 @@ kbd {
   color: #f1f1f1;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
+  font-family: 'Fira Mono', monospace;
 }
 
 /* #Tables
