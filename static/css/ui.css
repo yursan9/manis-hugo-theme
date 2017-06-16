@@ -124,6 +124,11 @@ a {
 a:hover {
   color: #0fa0ce; }
 
+nav a {
+  color: #777;
+  text-decoration: none; }
+nav a:hover {
+  color: #222; }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -265,6 +270,11 @@ ol ul {
 li {
   margin-bottom: 1rem; }
 
+nav ul {
+  list-style: none; }
+
+nav li {
+  display: inline; }
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
