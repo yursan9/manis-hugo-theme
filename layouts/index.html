@@ -7,17 +7,23 @@
 </section>
 <section>
 	<h4>Blog</h4>
-	<ul>
+	<ul class=list>
 	{{- range where .Pages "Section" "blog" -}}
-		<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+		<li>
+			<span>{{ .Date.Format "Jan 02, 2006" }}</span>
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+		</li>
 	{{- end -}}
 	</ul>
 </section>
 <section>
 	<h4>Work</h4>
-	<ul>
+	<ul class="list">
 	{{- range where .Pages "Section" "work" -}}
-		<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+		<li>
+			<span>{{ .Date.Format "Jan 02, 2006" }}</span>
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+		</li>
 	{{- end -}}
 	</ul>
 </section>
