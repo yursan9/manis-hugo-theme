@@ -21,7 +21,6 @@
 - Tables
 - Spacing
 - Utilities
-- Clearing
 - Media Queries
 */
 
@@ -340,18 +339,6 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
-
-
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* Self Clearing Goodness */
-.container:after,
-.row:after,
-.u-cf {
-  content: "";
-  display: table;
-  clear: both; }
 
 
 /* Media Queries
