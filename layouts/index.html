@@ -1,8 +1,8 @@
 {{ partial "header" . }}
-<section class="container">
+<section>
 	<h4>About</h4>
 </section>
-<section class="container">
+<section>
 	<h4>Blog</h4>
 	<ul>
 	{{- range where .Pages "Section" "blog" -}}
@@ -10,7 +10,7 @@
 	{{- end -}}
 	</ul>
 </section>
-<section class="container">
+<section>
 	<h4>Work</h4>
 	<ul>
 	{{- range where .Pages "Section" "work" -}}
