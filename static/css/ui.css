@@ -30,7 +30,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 80rem;
+  max-width: 70rem;
   margin: 0 auto;
   padding: 0 2rem;
   box-sizing: border-box;
@@ -62,7 +62,7 @@
   .row {
     flex-direction: row;
   }
-  
+
   .row .col.full {
     flex: 0 0 100%;
   }
