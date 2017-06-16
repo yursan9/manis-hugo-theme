@@ -341,12 +341,44 @@ li {
   margin-left: .5rem;
 }
 
-nav ul {
+ul.list {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 40rem) {
+  ul.list {
+    list-style: none;
+    margin-left: 1.5rem;
+  }
+}
+.list a {
+  text-decoration: none;
+}
+.list span {
+  margin: 0;
+  display: none;
+}
+@media (min-width: 40rem) {
+  .list span {
+    display: inline;
+  }
+}
+
+nav.top ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
-nav li { display: inline; }
+@media (min-width: 40rem) {
+  nav.top ul {
+    text-align: right;
+  }
+}
+nav.top li {
+  display: inline;
+  margin: 0;
+}
 
 dd { margin-left: 2rem; }
 
