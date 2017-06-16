@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>{{- .Title -}}</title>
-		<link rel="stylesheet" href="/css/normalize.css"/>
-		<link rel="stylesheet" href="/css/ui.css"/>
-	</head>
-	<body>
-		<header class="container">
-			<div class="row">
-				<div class="col">
-					<h1>{{- .Site.Title -}}</h1>
-					<h5>Hidup : Code : Linux</h5>
-				</div>
-				<div class="col">
-					<nav>
-						<ul>
-							<li>github</li>
-							<li>twitter</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
+{{ partial "meta" . }}
+<body>
+{{ partial "nav" . }}
+<main class="container">
