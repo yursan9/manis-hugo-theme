@@ -1,8 +1,10 @@
 {{ partial "header" . }}
-<article class="container">
-	<h1>{{ .Title }}</h1>
-	<h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
+<article>
+	<header>
+		<h1>{{ .Title }}</h1>
+		<h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
+	</header>
 	{{ .Content }}
-	<h4><a href="{{ .Site.BaseURL }}">Home</a></h4>
+	<hr/>
 </article>
 {{ partial "footer" . }}
