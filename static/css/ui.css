@@ -282,6 +282,11 @@ nav li {
   display: inline;
 }
 
+dd {
+  display: block;
+  margin-left: 2rem; }
+
+
 /* #Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
