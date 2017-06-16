@@ -326,6 +326,34 @@ td:last-child {
   padding-right: 0; }
 
 
+/* #Blockquote
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+blockquote {
+  box-sizing: border-box;
+  margin: 1.75em 0 1.75em 0;
+  padding: 0 0 0 1.75em;
+  border-left: #1eaedb 0.4em solid;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+blockquote cite:before {
+  content: "― "
+}
+
+blockquote cite a {
+  font-style: italic;
+  text-decoration: none;
+}
+
 /* #Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
