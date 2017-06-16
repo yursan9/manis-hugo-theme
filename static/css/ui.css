@@ -10,21 +10,22 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Media Queries
+- #Grid
+- #Base Styles
+- #Typography
+- #Links
+- #Buttons
+- #Forms
+- #Lists
+- #Code
+- #Tables
+- #Blockquote
+- #Spacing
+- #Utilities
+- #Media Queries
 */
 
-/* Grid (Flexbox)
+/* #Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
@@ -68,7 +69,7 @@
 }
 
 
-/* Base Styles
+/* #Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 *,
@@ -89,7 +90,7 @@ body {
   color: #444; }
 
 
-/* Typography
+/* #Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -117,7 +118,7 @@ p {
   margin-top: 0; }
 
 
-/* Links
+/* #Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: #1eaedb; }
@@ -130,7 +131,7 @@ nav a {
 nav a:hover {
   color: #222; }
 
-/* Buttons
+/* #Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
 button,
@@ -190,7 +191,7 @@ input[type="button"].button-primary:focus {
   border-color: #1eaedb; }
 
 
-/* Forms
+/* #Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
 input[type="number"],
@@ -252,7 +253,7 @@ label > .label-body {
   font-weight: normal; }
 
 
-/* Lists
+/* #Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
   list-style: circle inside; }
@@ -276,7 +277,7 @@ nav ul {
 nav li {
   display: inline; }
 
-/* Code
+/* #Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
   padding: .2rem .5rem;
@@ -300,7 +301,7 @@ kbd {
   border: 1px solid #e1e1e1;
   border-radius: 4px; }
 
-/* Tables
+/* #Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
@@ -315,7 +316,7 @@ td:last-child {
   padding-right: 0; }
 
 
-/* Spacing
+/* #Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
@@ -337,7 +338,7 @@ form {
   margin-bottom: 2.5rem; }
 
 
-/* Utilities
+/* #Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
   width: 100%;
@@ -351,7 +352,7 @@ form {
   float: left; }
 
 
-/* Misc
+/* #Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin-top: 3rem;
@@ -360,7 +361,7 @@ hr {
   border-top: 1px solid #e1e1e1; }
 
 
-/* Media Queries
+/* #Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
 Note: The best way to structure the use of media queries is to create the queries
