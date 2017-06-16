@@ -52,20 +52,35 @@
 @media (min-width: 40rem) {
   .container {
     width: 85%;
-    padding: 0; }
+    padding: 0;
+  }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 40rem) {
   .container { width: 80%; }
-  .row { flex-direction: row; }
+  .row {
+    flex-direction: row;
+  }
   
-  .row .col.full { flex: 0 0 100%; }
-  .row .col.half { flex: 0 0 50%; }
-  .row .col.one-third { flex: 0 0 33.3333%; }
-  .row .col.two-third { flex: 0 0 66.6666%; }
-  .row .col.one-fourth { flex: 0 0 25%; }
-  .row .col.three-fourth { flex: 0 0 75%; }
+  .row .col.full {
+    flex: 0 0 100%;
+  }
+  .row .col.half {
+    flex: 0 0 50%;
+  }
+  .row .col.one-third {
+    flex: 0 0 33.3333%;
+  }
+  .row .col.two-third {
+    flex: 0 0 66.6666%;
+  }
+  .row .col.one-fourth {
+    flex: 0 0 25%;
+  }
+  .row .col.three-fourth {
+    flex: 0 0 75%;
+  }
 }
 
 
@@ -75,19 +90,22 @@
 *,
 *:after,
 *:before {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #444; }
+  color: #444;
+}
 
 
 /* #Typography
@@ -96,13 +114,38 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
-  color: #222; }
-h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
-h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
-h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
-h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
-h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
-h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+  color: #222;
+}
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem;
+}
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem;
+}
+h3 {
+  font-size: 3.0rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem;
+}
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+}
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem;
+}
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
 
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -115,21 +158,20 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 
 /* #Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1eaedb; }
-a:hover {
-  color: #0fa0ce; }
+a { color: #1eaedb; }
+a:hover { color: #0fa0ce; }
 
 nav a {
   color: #777;
-  text-decoration: none; }
-nav a:hover {
-  color: #222; }
+  text-decoration: none;
+}
+nav a:hover { color: #222; }
 
 /* #Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -154,7 +196,8 @@ input[type="button"] {
   border-radius: 4px;
   border: 1px solid #bbb;
   cursor: pointer;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -167,7 +210,8 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
   border-color: #888;
-  outline: 0; }
+  outline: 0;
+}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -175,7 +219,8 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #fff;
   background-color: #33c3f0;
-  border-color: #33c3f0; }
+  border-color: #33c3f0;
+}
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -188,7 +233,8 @@ input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #fff;
   background-color: #1eaedb;
-  border-color: #1eaedb; }
+  border-color: #1eaedb;
+}
 
 
 /* #Forms
@@ -208,7 +254,8 @@ select {
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
@@ -220,11 +267,13 @@ input[type="password"],
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none; }
+          appearance: none;
+}
 textarea {
   min-height: 65px;
   padding-top: 6px;
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+}
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -235,39 +284,44 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
   border: 1px solid #33c3f0;
-  outline: 0; }
+  outline: 0;
+}
 label,
 legend {
   display: block;
   margin-bottom: .5rem;
-  font-weight: 600; }
+  font-weight: 600;
+}
 fieldset {
   padding: 0;
-  border-width: 0; }
+  border-width: 0;
+}
 input[type="checkbox"],
 input[type="radio"] {
-  display: inline; }
+  display: inline;
+}
 label > .label-body {
   display: inline-block;
   margin-left: .5rem;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 
 /* #Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
-  list-style: square inside; }
-ol {
-  list-style: decimal inside; }
+ul { list-style: square inside; }
+ol { list-style: decimal inside; }
 ol, ul {
   padding-left: 0;
-  margin-top: 0; }
+  margin-top: 0;
+}
 ul ul,
 ul ol,
 ol ol,
 ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
+  font-size: 90%;
+}
 li {
   margin-bottom: .5rem;
   margin-left: .5rem;
@@ -278,13 +332,9 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-nav li {
-  display: inline;
-}
+nav li { display: inline; }
 
-dd {
-  display: block;
-  margin-left: 2rem; }
+dd { margin-left: 2rem; }
 
 
 /* #Code
@@ -296,11 +346,13 @@ code {
   white-space: nowrap;
   background: #f1f1f1;
   border: 1px solid #e1e1e1;
-  border-radius: 4px; }
+  border-radius: 4px;
+}
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre; }
+  white-space: pre;
+}
 kbd {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -309,7 +361,8 @@ kbd {
   background: #222;
   color: #f1f1f1;
   border: 1px solid #e1e1e1;
-  border-radius: 4px; }
+  border-radius: 4px;
+}
 
 /* #Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -317,13 +370,16 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #e1e1e1;
+}
 th:first-child,
 td:first-child {
-  padding-left: 0; }
+  padding-left: 0;
+}
 th:last-child,
 td:last-child {
-  padding-right: 0; }
+  padding-right: 0;
+}
 
 
 /* #Blockquote
@@ -335,9 +391,7 @@ blockquote {
   border-left: #1eaedb 0.4em solid;
 }
 
-blockquote p {
-  margin-bottom: 0;
-}
+blockquote p { margin-bottom: 0; }
 
 blockquote cite {
   display: block;
@@ -345,9 +399,7 @@ blockquote cite {
   margin-right: 1rem;
 }
 
-blockquote cite:before {
-  content: "― "
-}
+blockquote cite:before { content: "― "; }
 
 blockquote cite a {
   font-style: italic;
@@ -380,14 +432,14 @@ form {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 .u-max-full-width {
   max-width: 100%;
-  box-sizing: border-box; }
-.u-pull-right {
-  float: right; }
-.u-pull-left {
-  float: left; }
+  box-sizing: border-box;
+}
+.u-pull-right { float: right; }
+.u-pull-left { float: left; }
 
 
 /* #Misc
@@ -396,7 +448,8 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #e1e1e1; }
+  border-top: 1px solid #e1e1e1;
+}
 
 
 /* #Media Queries
