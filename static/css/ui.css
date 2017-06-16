@@ -160,8 +160,21 @@ h6 {
 }
 
 p { margin-top: 0; }
+
+#brand { text-align: center; }
+@media (min-width: 40rem) {
+  #brand { text-align: left }
 }
 
+#brand h1 {
+  font-size: 4.2rem;
+  margin-bottom: 0;
+}
+#brand h5 {
+  font-size: 2rem;
+  color: #aaa;
+  margin-bottom: 0;
+}
 
 /* #Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
