@@ -101,8 +101,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  font-size: 1.6rem; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.7;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
   color: #444;
@@ -119,43 +119,43 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
 }
 h1 {
-  font-size: 4.0rem;
-  line-height: 1.2;
+  font-size: 3.4rem;
+  line-height: 1.25;
   letter-spacing: -.1rem;
 }
 h2 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   line-height: 1.25;
   letter-spacing: -.1rem;
 }
 h3 {
-  font-size: 3.0rem;
+  font-size: 2.6rem;
   line-height: 1.3;
   letter-spacing: -.1rem;
 }
 h4 {
-  font-size: 2.4rem;
+  font-size: 2.0rem;
   line-height: 1.35;
   letter-spacing: -.08rem;
 }
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   letter-spacing: -.05rem;
 }
 h6 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   letter-spacing: 0;
 }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 { font-size: 5.0rem; }
-  h2 { font-size: 4.2rem; }
-  h3 { font-size: 3.6rem; }
-  h4 { font-size: 3.0rem; }
-  h5 { font-size: 2.4rem; }
+  h1 { font-size: 4.0rem; }
+  h2 { font-size: 3.6rem; }
+  h3 { font-size: 3.0rem; }
+  h4 { font-size: 2.4rem; }
+  h5 { font-size: 1.8rem; }
   h6 { font-size: 1.5rem; }
 }
 
