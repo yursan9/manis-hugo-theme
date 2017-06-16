@@ -30,7 +30,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 96rem;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 0 2rem;
   box-sizing: border-box;
@@ -278,9 +278,9 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
 nav li {
-  display: inline; }
+  display: inline;
+}
 
 /* #Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -377,16 +377,16 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 40rem) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 55rem) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 75rem) {}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 100rem) {}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 120rem) {}
