@@ -1,5 +1,8 @@
-<nav class="bar">
+<nav class="bar u-pull-right">
 	<ul>
-		<li><h4><a href="/">Home</a></h4></li>
+		{{ if ne .Kind "home" }}
+		<li><a href="/">Home</a></li>
+		{{ end }}
+		<li><a href="/about">About</a></li>
 	</ul>
 </nav>
