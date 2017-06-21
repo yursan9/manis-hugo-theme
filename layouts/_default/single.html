@@ -6,5 +6,21 @@
 	</header>
 	{{ .Content }}
 	<hr/>
+	<div class="row">
+		<div class="col">
+		{{ if .PrevInSection }}
+			<a href="{{.PrevInSection.Permalink}}">
+				{{- .PrevInSection.Title -}}
+			</a>
+		{{ end }}
+		</div>
+		<div class="col">
+		{{ if .NextInSection }}
+			<a href="{{.NextInSection.Permalink}}">
+				{{- .NextInSection.Title -}}
+			</a>
+		{{ end }}
+		</div>
+	</div>
 </article>
 {{ partial "footer" . }}
