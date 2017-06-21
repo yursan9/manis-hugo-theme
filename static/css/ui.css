@@ -340,25 +340,25 @@ li {
   margin-left: .5rem;
 }
 
-ul.list {
+ul.no-bullet {
   margin-left: 1.5rem;
   margin-bottom: 1.5rem;
 }
 @media (min-width: 40rem) {
-  ul.list {
+  ul.no-bullet {
     list-style: none;
     margin-left: 1.5rem;
   }
 }
-.list a {
+.no-bullet a {
   text-decoration: none;
 }
-.list span {
-  margin: 0;
+.no-bullet span {
   display: none;
 }
 @media (min-width: 40rem) {
-  .list span {
+  .no-bullet span {
+    margin-right: 1rem;
     display: inline;
   }
 }
