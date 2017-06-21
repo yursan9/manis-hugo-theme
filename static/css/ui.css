@@ -363,20 +363,14 @@ ul.no-bullet {
   }
 }
 
-nav.bar ul {
+.bar ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
-@media (min-width: 40rem) {
-  nav.bar ul {
-    text-align: right;
-  }
-}
-nav.bar li {
+.bar li {
   display: inline;
-  margin: 0;
+  font-size: 2.5rem;
 }
 
 dd { margin-left: 2rem; }
