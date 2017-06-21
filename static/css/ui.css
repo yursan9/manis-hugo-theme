@@ -168,12 +168,11 @@ p { margin-top: 0; }
 
 #brand h1 {
   font-size: 4.2rem;
-  margin-bottom: 0;
+  margin-bottom: -.5rem;
 }
 #brand h5 {
   font-size: 2rem;
   color: #aaa;
-  margin-bottom: 0;
 }
 
 /* #Links
