@@ -1,24 +1,24 @@
 {{ partial "header" . }}
 <section>
 	<h4>Blog</h4>
-	<ul class=list>
-	{{- range where .Pages "Section" "blog" -}}
+	<ul class="no-bullet">
+		{{- range where .Pages "Section" "blog" -}}
 		<li>
 			<span>{{ .Date.Format "Jan 02, 2006" }}</span>
 			<a href="{{ .Permalink }}">{{ .Title }}</a>
 		</li>
-	{{- end -}}
+		{{- end -}}
 	</ul>
 </section>
 <section>
 	<h4>Work</h4>
-	<ul class="list">
-	{{- range where .Pages "Section" "work" -}}
+	<ul class="no-bullet">
+		{{- range where .Pages "Section" "work" -}}
 		<li>
 			<span>{{ .Date.Format "Jan 02, 2006" }}</span>
 			<a href="{{ .Permalink }}">{{ .Title }}</a>
 		</li>
-	{{- end -}}
+		{{- end -}}
 	</ul>
 </section>
 {{ partial "footer" . }}
