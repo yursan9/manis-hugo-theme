@@ -1,11 +1,5 @@
 {{ partial "header" . }}
 <section>
-	<h4>About</h4>
-	{{- range where .Pages "Type" "about" -}}
-	{{ .Summary }}
-	{{- end -}}
-</section>
-<section>
 	<h4>Blog</h4>
 	<ul class=list>
 	{{- range where .Pages "Section" "blog" -}}
