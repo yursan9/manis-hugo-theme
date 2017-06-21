@@ -48,6 +48,13 @@
   flex: 1;
   margin-bottom: .5rem;
 }
+.last-mobile {
+  -webkit-order: 1;
+  -moz-order: 1;
+  -ms-order: 1;
+  -o-order: 1;
+  order: 1;
+}
 
 /* For devices larger than 400px */
 @media (min-width: 40rem) {
@@ -81,6 +88,14 @@
   }
   .row .col.three-fourth {
     flex: 0 0 75%;
+  }
+
+  .last-mobile {
+    -webkit-order: 0;
+    -moz-order: 0;
+    -ms-order: 0;
+    -o-order: 0;
+    order: 0;
   }
 }
 
