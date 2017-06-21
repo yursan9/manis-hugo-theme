@@ -3,7 +3,9 @@
 		<div class="col">
 			<hgroup id="brand">
 				<h1>{{- .Site.Title -}}</h1>
-				<h5>{{- .Site.Params.Tagline -}}</h5>
+				{{ with .Site.Params.Tagline }}
+				<h5>{{.}}</h5>
+				{{ end }}
 			</hgroup>
 		</div>
 		<div class="col">
