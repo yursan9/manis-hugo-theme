@@ -494,6 +494,9 @@ form {
 section h4 {
   margin-bottom: .5rem;
 }
+footer p {
+  margin-bottom: 0;
+}
 
 /* #Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -516,6 +519,11 @@ section h4 {
 }
 @media (min-width: 75rem) {
   .u-header { padding-top: 12rem; }
+}
+
+.u-footer {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 
