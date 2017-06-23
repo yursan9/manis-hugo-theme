@@ -198,12 +198,14 @@ p { margin-top: 0; }
 
 /* #Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a { color: #1eaedb; }
+a {
+  color: #1eaedb;
+  text-decoration: none;
+}
 a:hover { color: #0fa0ce; }
 
 nav a {
   color: #777;
-  text-decoration: none;
 }
 nav a:hover { color: #1eaedb; }
 
