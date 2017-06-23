@@ -1,14 +1,16 @@
 <header class="container">
 	<div class="row u-header">
 		<div class="col last-mobile">
-			<hgroup id="brand">
-				<h1>{{- .Site.Title -}}</h1>
-				{{ with .Site.Params.Tagline }}
-				<h5>{{.}}</h5>
-				{{ end }}
-			</hgroup>
+			<a href="/">
+				<hgroup id="brand">
+					<h1>{{- .Site.Title -}}</h1>
+					{{ with .Site.Params.Tagline }}
+					<h5>{{.}}</h5>
+					{{ end }}
+				</hgroup>
+			</a>
 		</div>
-		<div class="col">
+		<div class="col navbar">
 				{{ partial "navbar" . }}
 		</div>
 	</div>
