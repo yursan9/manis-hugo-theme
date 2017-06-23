@@ -521,6 +521,20 @@ hr {
   border-top: 1px solid #e1e1e1;
 }
 
+[class^="icon"] {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  margin-right: 10px;
+  fill: #fff;
+}
+.icon-feed {
+  top: .13em;
+}
+.icon-social {
+  width: 3rem;
+  height: 3rem;
+}
 
 /* #Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
