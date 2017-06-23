@@ -521,6 +521,17 @@ hr {
   border-top: 1px solid #e1e1e1;
 }
 
+.navbar {
+  background: #444;
+  margin: 0 -2rem;
+}
+@media (min-width: 40rem) {
+  .navbar {
+    background: transparent;
+  }
+}
+
+
 [class^="icon"] {
   width: 1em;
   height: 1em;
