@@ -394,6 +394,7 @@ ul.no-bullet {
 .bar li {
   display: inline;
   font-size: 2.5rem;
+  margin-left: 1.5rem;
 }
 
 dd { margin-left: 2rem; }
