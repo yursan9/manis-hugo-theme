@@ -1,0 +1,10 @@
+#feed {
+  fill: #777;
+}
+#feed:hover {
+  fill: #1eaedb;
+}
+
+#social {
+	fill: #444;
+}
