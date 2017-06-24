@@ -512,6 +512,15 @@ footer p {
 .u-pull-right { float: right; }
 .u-pull-left { float: left; }
 
+.u-hide-mobile {
+  display: none;
+}
+@media (min-width: 40rem) {
+  .u-hide-mobile {
+    display: inline-block;
+  }
+}
+
 .u-header {
   margin-bottom: 1.5rem;
 }
