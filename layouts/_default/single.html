@@ -2,25 +2,9 @@
 <article>
 	<header>
 		<h1>{{ .Title }}</h1>
-		<h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
 	</header>
 	{{ .Content }}
 	<hr/>
-	<div class="row">
-		<div class="col">
-		{{ if .PrevInSection }}
-			<a href="{{.PrevInSection.Permalink}}">
-				{{- .PrevInSection.Title -}}
-			</a>
-		{{ end }}
-		</div>
-		<div class="col">
-		{{ if .NextInSection }}
-			<a href="{{.NextInSection.Permalink}}">
-				{{- .NextInSection.Title -}}
-			</a>
-		{{ end }}
-		</div>
-	</div>
+	<a href="/{{.Section}}">Return to {{.Section | title}}</a>
 </article>
 {{ partial "footer" . }}

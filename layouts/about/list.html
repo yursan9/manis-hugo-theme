@@ -3,14 +3,11 @@
 	<h2>{{.Section | title}}</h2>
 	{{ with .Content }}{{.}}{{ end }}
 </section>
-{{ range .Pages.GroupByDate "Jan, 2006" }}
 <section>
-	<h4>{{ .Key }}</h4>
-	<ul class="no-bullet">
+	<ul>
 	    {{ range .Pages }}
-	    {{ partial "li" . }}
+	    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 	    {{ end }}
 	</ul>
 </section>
-{{ end }}
 {{ partial "footer" . }}

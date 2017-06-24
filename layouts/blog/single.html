@@ -1,0 +1,35 @@
+{{ partial "header" . }}
+<article>
+	<header>
+		<h1>{{ .Title }}</h1>
+		<h6>
+			{{if .Date}}<time datetime="{{.Date}}">{{ .Date.Format .Site.Params.DateFmt }} - </time>{{end}}
+			{{ .ReadingTime }} Menit
+			{{if .Params.tags}}
+				-
+				{{range .Params.tags}}
+				{{ . }}
+				{{end}}
+			{{end}}
+		</h6>
+	</header>
+	{{ .Content }}
+	<hr/>
+	<div class="row">
+		<div class="col">
+		{{ if .PrevInSection }}
+			<a href="{{.PrevInSection.Permalink}}">
+				{{- .PrevInSection.Title -}}
+			</a>
+		{{ end }}
+		</div>
+		<div class="col">
+		{{ if .NextInSection }}
+			<a href="{{.NextInSection.Permalink}}">
+				{{- .NextInSection.Title -}}
+			</a>
+		{{ end }}
+		</div>
+	</div>
+</article>
+{{ partial "footer" . }}
