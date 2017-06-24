@@ -4,7 +4,13 @@
 				<div class="col three-forth">
 					{{ partial "social.html" . }}
 					<p>
-						Theme used: <a href="/tulis">Tulis</a>
+						{{ if .Site.Params.themeAttrib }}
+						Theme used: <a href="/tulis">Tulis</a><br>
+						{{ end }}
+						{{ with .Site.Params.License }}
+						{{ . | safeHTML }} |
+						<a href="/about/license">License</a>
+						{{ end }}
 					</p>
 				</div>
 				<div class="col to-up">
