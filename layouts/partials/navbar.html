@@ -3,6 +3,5 @@
 		{{ range .Site.Menus.main }}
         <li><a href="{{ .URL }}">{{ .Name | title | singularize }}</a></li>
         {{ end }}
-		<li><a href="/feed"><object class="icon-feed" type="image/svg+xml" data="/img/feed.svg">Feed</object></a></li>
 	</ul>
 </nav>
