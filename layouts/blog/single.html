@@ -19,14 +19,16 @@
 		<div class="col">
 		{{ if .PrevInSection }}
 			<a href="{{.PrevInSection.Permalink}}">
+				<img class="icon-text" src="/img/prev.svg"/>
 				{{- .PrevInSection.Title -}}
 			</a>
 		{{ end }}
 		</div>
 		<div class="col">
 		{{ if .NextInSection }}
-			<a href="{{.NextInSection.Permalink}}">
+			<a class="u-pull-right" href="{{.NextInSection.Permalink}}">
 				{{- .NextInSection.Title -}}
+				<img class="icon-text" src="/img/next.svg"/>
 			</a>
 		{{ end }}
 		</div>
