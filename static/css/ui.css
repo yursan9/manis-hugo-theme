@@ -394,7 +394,7 @@ ul.no-bullet {
 .bar li {
   display: inline;
   font-size: 2.5rem;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 dd { margin-left: 2rem; }
@@ -538,7 +538,7 @@ hr {
 }
 
 .navbar {
-  background: #444;
+  background: #f4f4f7;
   margin: 0 -2rem;
 }
 @media (min-width: 40rem) {
