@@ -516,10 +516,10 @@ footer p {
   margin-bottom: 1.5rem;
 }
 @media (min-width: 55rem) {
-  .u-header { padding-top: 6rem; }
+  .u-header { padding-top: 3rem; }
 }
 @media (min-width: 75rem) {
-  .u-header { padding-top: 12rem; }
+  .u-header { padding-top: 8rem; }
 }
 
 .u-footer {
