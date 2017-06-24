@@ -5,6 +5,9 @@
 		<title>
 			{{- .Title }}{{ if ne .Kind "home" }} - {{.Site.Title}}{{ end -}}
 		</title>
+		{{ with .Site.Params.FaviconImg }}
+		<<link rel="shortcut icon" href="{{.}}">
+		{{ end }}
 		<link rel="stylesheet" href="/css/normalize.css"/>
 		<link rel="stylesheet" href="/css/ui.css"/>
 		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway">
