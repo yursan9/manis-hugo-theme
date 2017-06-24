@@ -1,3 +1,21 @@
 		</main>
+		<footer class="container">
+			<div class="row u-footer">
+				<div class="col three-forth">
+					{{ partial "social.html" . }}
+					<p>
+						Theme used: <a href="/tulis">Tulis</a>
+					</p>
+				</div>
+				<div class="col to-up">
+					{{ if ne .Kind "home" }}
+					<a href="#">
+						<img class="icon-text" src="/img/toup.svg" alt="To Up"/>
+						<span>Kembali ke atas</span>
+					</a>
+					{{ end }}
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
