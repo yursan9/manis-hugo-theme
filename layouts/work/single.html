@@ -4,6 +4,9 @@
 		<h1>{{ .Title }}</h1>
 		<h6>
 			{{if .Date}}<time datetime="{{.Date}}">{{ .Date.Format .Site.Params.DateFmt }} - </time>{{end}}
+			{{ with .Params.workURL }}
+			<a href="{{.}}" target="_blank"><em>{{ T "workHomepage" }}</em></a> -
+			{{ end }}
 			{{if .Params.tags}}
 				{{range .Params.tags}}
 				{{ . }}
@@ -11,9 +14,6 @@
 			{{end}}
 		</h6>
 	</header>
-	{{ with .Params.workURL }}
-	<a href="{{.}}" target="_blank"><em>Work's Homepage</em></a>
-	{{ end }}
 	{{ .Content }}
 	<hr/>
 	<div class="row">

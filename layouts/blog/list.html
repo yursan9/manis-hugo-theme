@@ -1,13 +1,16 @@
 {{ partial "header" . }}
 <section>
-	<h2>{{ T "sectionAbout" }}</h2>
+	<h2>{{ T "sectionBlog" }}</h2>
 	{{ with .Content }}{{.}}{{ end }}
 </section>
+{{ range .Pages.GroupByDate "Jan, 2006" }}
 <section>
-	<ul>
+	<h4>{{ .Key }}</h4>
+	<ul class="no-bullet">
 	    {{ range .Pages }}
-	    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+	    {{ partial "li" . }}
 	    {{ end }}
 	</ul>
 </section>
+{{ end }}
 {{ partial "footer" . }}

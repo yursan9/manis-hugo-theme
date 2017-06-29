@@ -5,11 +5,11 @@
 					{{ partial "social.html" . }}
 					<p>
 						{{ if .Site.Params.themeAttrib }}
-						Theme used: <a href="https://github.com/yursan9/manis-hugo-theme">Manis</a><br>
+						{{ T "usedTheme" }} <a href="https://github.com/yursan9/manis-hugo-theme">Manis</a><br>
 						{{ end }}
 						{{ with .Site.Params.License }}
 						{{ . | safeHTML }} |
-						<a href="/about/license">License</a>
+						<a href="/about/license">{{ T "license" }}</a>
 						{{ end }}
 					</p>
 				</div>
@@ -17,7 +17,7 @@
 					{{ if ne .Kind "home" }}
 					<a href="#">
 						<img class="icon-text" src="/img/toup.svg" alt="To Up"/>
-						<span>Kembali ke atas</span>
+						<span>{{ T "toUp" }}</span>
 					</a>
 					{{ end }}
 				</div>

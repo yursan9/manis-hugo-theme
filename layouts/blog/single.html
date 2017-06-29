@@ -4,7 +4,7 @@
 		<h1>{{ .Title }}</h1>
 		<h6>
 			{{if .Date}}<time datetime="{{.Date}}">{{ .Date.Format .Site.Params.DateFmt }} - </time>{{end}}
-			{{ .ReadingTime }} Menit
+			{{ T "readingTime" .ReadingTime }}
 			{{if .Params.tags}}
 				-
 				{{range .Params.tags}}
