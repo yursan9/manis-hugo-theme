@@ -1,0 +1,33 @@
+[latestPost]
+other = "Artikel Terbaru"
+
+[latestWork]
+other = "Karya Terbaru"
+
+[sectionAbout]
+other = "Tentang"
+
+[sectionBlog]
+other = "Blog"
+
+[sectionWork]
+other = "Karya"
+
+[license]
+other = "Lisensi"
+
+[backtoAbout]
+other = "Kembali ke Tentang"
+
+[toUp]
+other = "Kembali ke atas"
+
+[workHomepage]
+other = "Situs"
+
+[usedTheme]
+other = "Tema digunakan:"
+
+[readingTime]
+one = "Bacaan semenit"
+other = "Bacaan {{.Count}} menit"
