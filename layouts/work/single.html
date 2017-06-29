@@ -11,6 +11,9 @@
 			{{end}}
 		</h6>
 	</header>
+	{{ with .Params.workURL }}
+	<a href="{{.}}" target="_blank"><em>Work's Homepage</em></a>
+	{{ end }}
 	{{ .Content }}
 	<hr/>
 	<div class="row">
