@@ -18,6 +18,7 @@
 - #Code
 - #Tables
 - #Blockquote
+- #Navigation
 - #Spacing
 - #Utilities
 - #Media Queries
@@ -252,17 +253,6 @@ ul.no-bullet {
   }
 }
 
-.bar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.bar li {
-  display: inline;
-  font-size: 2.5rem;
-  margin-right: 1rem;
-}
-
 dd { margin-left: 2rem; }
 
 /* #Code
@@ -312,7 +302,6 @@ td:last-child {
   padding-right: 0;
 }
 
-
 /* #Blockquote
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 blockquote {
@@ -335,6 +324,47 @@ blockquote cite:before { content: "― "; }
 blockquote cite a {
   font-style: italic;
   text-decoration: none;
+}
+
+/* #Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar {
+  background: #f7f7f7;
+  margin: 0 -2rem;
+}
+@media (min-width: 40rem) {
+  .navbar {
+    background: transparent;
+  }
+}
+
+.to-up {
+  text-align: center;
+  font-size: 2rem;
+}
+@media (min-width: 40rem) {
+  .to-up {
+    text-align: right;
+  }
+}
+.to-up span {
+  display: none;
+}
+@media (min-width: 40rem) {
+  .to-up span {
+    display: inline;
+  }
+}
+
+.bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bar li {
+  display: inline;
+  font-size: 2.25rem;
+  margin-right: 1rem;
 }
 
 /* #Spacing
@@ -402,34 +432,7 @@ hr {
   border-top: 1px solid #e1e1e1;
 }
 
-.navbar {
-  background: #f4f4f7;
-  margin: 0 -2rem;
 }
-@media (min-width: 40rem) {
-  .navbar {
-    background: transparent;
-  }
-}
-
-.to-up {
-  text-align: center;
-  font-size: 2rem;
-}
-@media (min-width: 40rem) {
-  .to-up {
-    text-align: right;
-  }
-}
-.to-up span {
-  display: none;
-}
-@media (min-width: 40rem) {
-  .to-up span {
-    display: inline;
-  }
-}
-
 
 [class^="icon"] {
   width: 1em;
