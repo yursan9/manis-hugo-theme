@@ -23,5 +23,8 @@
 				</div>
 			</div>
 		</footer>
+		{{ if .Site.Params.HighlightJs }}
+		<script>hljs.initHighlightingOnLoad();</script>
+		{{ end }}
 	</body>
 </html>
