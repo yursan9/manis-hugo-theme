@@ -7,7 +7,7 @@
 						{{ if .Site.Params.themeAttrib }}
 						{{ T "usedTheme" }} <a href="https://github.com/yursan9/manis-hugo-theme">Manis</a><br>
 						{{ end }}
-						{{ with .Site.Params.License }}
+						{{ with .Site.Copyright }}
 						{{ . | safeHTML }} |
 						<a href="/about/license">{{ T "license" }}</a>
 						{{ end }}
