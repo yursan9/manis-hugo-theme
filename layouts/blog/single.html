@@ -3,12 +3,12 @@
 	<header>
 		<h1>{{ .Title }}</h1>
 		<h6>
-			{{if .Date}}<time datetime="{{.Date}}">{{ .Date.Format .Site.Params.DateFmt }} - </time>{{end}}
-			{{ T "readingTime" .ReadingTime }}
+			{{if .Date}}<time datetime="{{.Date}}">{{ .Date.Format .Site.Params.DateFmt }}</time>{{end}}
+			- {{ T "readingTime" .ReadingTime }}
 			{{if .Params.tags}}
 				-
 				{{range .Params.tags}}
-				{{ . }}
+				<a href="/tags/{{ . }}">{{ . }}</a>
 				{{end}}
 			{{end}}
 		</h6>
