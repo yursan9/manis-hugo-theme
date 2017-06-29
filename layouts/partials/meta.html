@@ -5,9 +5,13 @@
 		<title>
 			{{- .Title }}{{ if ne .Kind "home" }} - {{.Site.Title}}{{ end -}}
 		</title>
+
 		{{ with .Site.Params.FaviconImg }}
-		<<link rel="shortcut icon" href="{{.}}">
+		<link rel="shortcut icon" href="{{.}}">
 		{{ end }}
+
+		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway">
+
 		{{ if .Site.Params.HighlightJs }}
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -15,7 +19,11 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/yaml.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/tex.min.js"></script>
 		{{ end }}
+
+		{{ if .Site.Params.Debug }}
 		<link rel="stylesheet" href="/css/normalize.css"/>
 		<link rel="stylesheet" href="/css/ui.css"/>
-		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway">
+		{{ else }}
+		<link rel="stylesheet" href="/css/ui.min.css"/>
+		{{ end }}
 	</head>
