@@ -1,7 +1,31 @@
 <hgroup id="brand">
-	<h1>{{- .Site.Title -}}</h1>
-	{{ with .Site.Params.Tagline }}
-	<h5>{{.}}</h5>
+	<!-- Homepage -->
+	{{- if eq .Kind "home" -}}
+	<h1>{{ .Site.Title }}</h1>
+	<h5>{{- with .Site.Params.Tagline -}}{{.}}{{- end -}}</h5>
+	<!-- Section List -->
+	{{- else if eq .Kind "section" -}}
+	<h1>{{ .Title }}</h1>
+	<!-- Ordinary Page -->
+	{{- else if eq .Kind "page" -}}
+	<h1>{{ .Title }}</h1>
+	<h5>
+		<time datetime="{{.Date}}">{{ .Date.Format .Site.Params.DateFmt }}</time>
+		{{- with .Params.tags -}}
+		-
+			{{ range . }}
+			<a href="/tags/{{.}}">{{.}}</a>
+			{{ end }}
+		{{- end -}}
+		{{- with .Params.workURL -}}
+		-
+		<a href="{{.}}">{{ T "workHomepage" }}</a>
+		{{- end -}}
+	</h5>
+	<!-- Taxonomy Page -->
+	{{- else if eq .Kind "taxonomy" -}}
+	<h5>{{ .Data.Singular | title }}:</h5>
+	<h1>{{ .Title }}</h1>
 	{{ end }}
 </hgroup>
 <hr>
