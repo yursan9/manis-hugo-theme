@@ -10,7 +10,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-- #Grid
+- #Container
 - #Base Styles
 - #Typography
 - #Links
@@ -24,7 +24,7 @@
 - #Media Queries
 */
 
-/* #Grid
+/* #Container
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
@@ -33,69 +33,6 @@
   margin: 0 auto;
   padding: 0 2rem;
   box-sizing: border-box;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-}
-.col {
-  flex: 1;
-  margin-bottom: .5rem;
-}
-.last-mobile {
-  -webkit-order: 1;
-  -moz-order: 1;
-  -ms-order: 1;
-  -o-order: 1;
-  order: 1;
-}
-
-/* For devices larger than 400px */
-@media (min-width: 40rem) {
-  .container {
-    width: 85%;
-    padding: 0;
-  }
-}
-
-/* For devices larger than 550px */
-@media (min-width: 40rem) {
-  .container { width: 80%; }
-  .row {
-    flex-direction: row;
-  }
-
-  .row .col.full {
-    flex: 0 0 100%;
-  }
-  .row .col.half {
-    flex: 0 0 50%;
-  }
-  .row .col.one-third {
-    flex: 0 0 33.3333%;
-  }
-  .row .col.two-third {
-    flex: 0 0 66.6666%;
-  }
-  .row .col.one-fourth {
-    flex: 0 0 25%;
-  }
-  .row .col.three-fourth {
-    flex: 0 0 75%;
-  }
-
-  .last-mobile {
-    -webkit-order: 0;
-    -moz-order: 0;
-    -ms-order: 0;
-    -o-order: 0;
-    order: 0;
-  }
 }
 
 
