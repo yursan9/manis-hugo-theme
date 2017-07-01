@@ -2,9 +2,7 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{{ .Hugo.Generator }}
-		<title>
-			{{- .Title }}{{ if ne .Kind "home" }} - {{.Site.Title}}{{ end -}}
-		</title>
+		{{ partial "metatitle" . }}
 
 		{{ with .Site.Params.FaviconImg }}
 		<link rel="shortcut icon" href="{{.}}">
