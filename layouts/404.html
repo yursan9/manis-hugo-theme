@@ -2,9 +2,11 @@
 <html lang="{{.Language}}">
 {{ partial "meta" . }}
 <body>
-	<hgroup id="brand">
-		<h1>{{ .Site.Params.Head404 }}</h1>
-		<h5>{{ .Site.Params.Sub404 }}</h5>
-	</hgroup>
+	<div class="container u-header">
+		<hgroup id="brand">
+			<h1>{{ .Site.Params.Head404 | safeHTML }}</h1>
+			<h5>{{ .Site.Params.Sub404 | safeHTML }}</h5>
+		</hgroup>
+	</div>
 </body>
 </html>
