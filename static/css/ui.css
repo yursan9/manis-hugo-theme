@@ -255,6 +255,15 @@ blockquote cite a {
   margin-left: 0;
 }
 
+.next-post {
+  display: block;
+  text-align: right;
+}
+.prev-post {
+  display: block;
+  text-align: left;
+}
+
 /* #Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 pre,
