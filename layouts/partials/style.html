@@ -1,0 +1,13 @@
+<style>
+	a { color: {{ .Site.Params.ColorTheme }}; }
+	blockquote { border-left-color: {{ .Site.Params.ColorTheme }}; }
+	.bar a:hover {
+		color: {{ .Site.Params.ColorTheme }};
+		text-decoration: none; }
+	.sep {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		margin-left:0;
+		width: 24rem;
+		border-top: 2px solid {{ .Site.Params.ColorTheme }}; }
+</style>

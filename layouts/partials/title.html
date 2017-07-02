@@ -11,7 +11,7 @@
 	<h1>{{ .Title }}</h1>
 	<h5>
 		<time datetime="{{.Date}}">{{ .Date.Format .Site.Params.DateFmt }}</time>
-		{{- with .Params.tags -}}
+		{{ with .Params.tags -}}
 		-
 			{{ range . }}
 			<a href="/tags/{{.}}">{{.}}</a>
@@ -28,4 +28,4 @@
 	<h1>{{ .Title }}</h1>
 	{{ end }}
 </hgroup>
-<hr>
+<hr class="sep" />

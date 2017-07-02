@@ -127,11 +127,8 @@ p { margin-top: 0; }
 
 /* #Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1eaedb;
-  text-decoration: none;
-}
-a:hover { color: #0fa0ce; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 
 /* #Lists
@@ -243,6 +240,7 @@ blockquote cite a {
 
 /* #Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bar a { color: #777; }
 .bar ul {
   list-style: none;
   margin: 0;
@@ -289,7 +287,7 @@ ol {
 }
 
 .u-footer {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
