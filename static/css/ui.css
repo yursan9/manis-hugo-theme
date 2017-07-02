@@ -152,17 +152,17 @@ li {
 }
 
 ul.no-bullet {
-  margin-left: 1.5rem;
+  margin-left: 0;
   margin-bottom: 1.5rem;
 }
 @media (min-width: 40rem) {
   ul.no-bullet {
     list-style: none;
-    margin-left: 1.5rem;
+    margin-left: 0;
   }
 }
-.no-bullet a {
-  text-decoration: none;
+.no-bullet li {
+  margin-left: 0;
 }
 .no-bullet span {
   display: none;
