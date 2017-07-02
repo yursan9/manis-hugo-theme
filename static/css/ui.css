@@ -64,7 +64,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 300;
   color: #222;
   font-family: 'Raleway', sans-serif;
@@ -125,12 +125,13 @@ p { margin-top: 0; }
 
 #brand h1 {
   font-size: 4.2rem;
-  margin-bottom: -.5rem;
+  margin-bottom: -.2rem;
   font-weight: bold
 }
 #brand h5 {
   font-size: 2rem;
   color: #aaa;
+  margin-bottom: -.2rem;
 }
 
 
@@ -293,6 +294,7 @@ blockquote cite a {
   display: inline;
   font-size: 2.25rem;
   margin-right: 1rem;
+  margin-left: 0;
 }
 
 /* #Spacing
@@ -336,13 +338,13 @@ footer p {
 .u-pull-left { float: left; }
 
 .u-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
 }
 @media (min-width: 55rem) {
-  .u-header { padding-top: 3rem; }
+  .u-header { padding-top: 1rem; }
 }
 @media (min-width: 75rem) {
-  .u-header { padding-top: 8rem; }
+  .u-header { padding-top: 3rem; }
 }
 
 .u-footer {
