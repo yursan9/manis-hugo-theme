@@ -273,15 +273,8 @@ figure,
 table,
 p,
 ul,
-ol,
-form {
+ol {
   margin-bottom: 2.5rem; }
-section h4 {
-  margin-bottom: .5rem;
-}
-footer p {
-  margin-bottom: 0;
-}
 
 /* #Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
