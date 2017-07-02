@@ -1,6 +1,6 @@
 {{ partial "header" . }}
 <section>
-	<h2>{{ .Title | title }}</h2>
+	{{ partial "title" . }}
 	{{ with .Content }}{{.}}{{ end }}
 </section>
 {{ range .Pages.GroupByDate "Jan, 2006" }}

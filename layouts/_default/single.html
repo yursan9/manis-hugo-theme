@@ -1,9 +1,6 @@
 {{ partial "header" . }}
 <article>
-	<header>
-		<h1>{{ .Title }}</h1>
-	</header>
+	<header>{{ partial "title" . }}</header>
 	{{ .Content }}
-	<hr/>
 </article>
 {{ partial "footer" . }}
