@@ -8,8 +8,10 @@
 					{{ T "usedTheme" }} <a href="https://github.com/yursan9/manis-hugo-theme">Manis</a><br>
 					{{ end }}
 					{{ with .Site.Copyright }}
-					{{ . | safeHTML }} |
-					<a href="/about/license">{{ T "license" }}</a>
+					{{ . | safeHTML }}
+					{{ end }}
+					{{ with .Site.Params.LicenseURL }}
+					| <a href="{{.}}">{{ T "license" }}</a>
 					{{ end }}
 				</p>
 				{{ if ne .Kind "home" }}
