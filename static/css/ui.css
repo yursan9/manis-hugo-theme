@@ -143,10 +143,6 @@ a {
 }
 a:hover { color: #0fa0ce; }
 
-nav a {
-  color: #777;
-}
-nav a:hover { color: #1eaedb; }
 
 /* #Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -257,34 +253,6 @@ blockquote cite a {
 
 /* #Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.navbar {
-  background: #f7f7f7;
-  margin: 0 -2rem;
-}
-@media (min-width: 40rem) {
-  .navbar {
-    background: transparent;
-  }
-}
-
-.to-up {
-  text-align: center;
-  font-size: 2rem;
-}
-@media (min-width: 40rem) {
-  .to-up {
-    text-align: right;
-  }
-}
-.to-up span {
-  display: none;
-}
-@media (min-width: 40rem) {
-  .to-up span {
-    display: inline;
-  }
-}
-
 .bar ul {
   list-style: none;
   margin: 0;
@@ -299,14 +267,6 @@ blockquote cite a {
 
 /* #Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
-  margin-bottom: 1rem; }
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1.5rem; }
 pre,
 blockquote,
 dl,
@@ -326,17 +286,6 @@ footer p {
 
 /* #Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box;
-}
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-.u-pull-right { float: right; }
-.u-pull-left { float: left; }
-
 .u-header {
   margin-bottom: .5rem;
 }
@@ -370,7 +319,6 @@ img {
   width: 1em;
   height: 1em;
   position: relative;
-  fill: #fff;
 }
 .icon-text {
   top: .13em;
