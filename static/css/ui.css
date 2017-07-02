@@ -113,23 +113,13 @@ h6 {
 p { margin-top: 0; }
 
 #brand {
-  text-align: center;
-  padding-top: 1rem;
+  text-align: left;
 }
-@media (min-width: 40rem) {
-  #brand {
-    text-align: left;
-    padding-top: 0rem;
-  }
-}
-
 #brand h1 {
-  font-size: 4.2rem;
   margin-bottom: -.2rem;
   font-weight: bold
 }
 #brand h5 {
-  font-size: 2rem;
   color: #aaa;
   margin-bottom: -.2rem;
 }
