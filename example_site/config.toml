@@ -1,0 +1,44 @@
+baseURL = "http://yurizal-san.com/"			# Site's URL
+title = "Manis"								# Site's Name
+theme = "manis"
+copyright = "&copy; 2017 Yurizal Susanto"	# Copyright notice. Note: You can use HTML tag here
+pluralizeListTitles = false
+paginate = 10								# Minimum number of item before paginate navigation show up
+canonifyURL = true
+
+[taxonomies]
+	tag = "tags"
+
+[params]
+	debugCSS = true							# If false use use minified CSS (ui.min.css)
+	# Site meta description
+	description = "Sweet little Hugo's theme for personal website or blog."
+	tagline = "Nothing sweeter than this"	# Site's Tagline (Subtitle or Keyword)
+	themeAttrib = true						# If true give attribution to this theme
+	licenseURL = "/about/license"			# URL to license file, can be outside of your domain
+
+	# 404 Configuration
+	head404 = "Sorry, I can find what you want."
+	sub404 = "Back to <a href='/'>Home</a>."
+
+	colorTheme = "#f55"					# Color of your website
+	latestCount = 3							# Maximum number of item in Latest Posts or Works
+	faviconImg = ""							# Path to site's favicon image
+	dateFmt = "Jan 02, 2006"				# Date format in item list
+
+	# Code Highlighting (HighlightJS)
+	highlightJs = true
+	highlightJsLanguages = [ "go" ]
+	highlightJsStyle = "ocean"
+
+	# Social Links
+	email = "mail@yurizal-san.com"
+	github = "https://github.com/yursan9/"
+	twitter = "https://twitter.com/yuri_boya"
+
+# Edit this if you want to translate your blog
+defaultContentLanguage = "en"
+#[languages.in]
+#	lang = "in"
+#	languageName = "Bahasa Indonesia"
+#	weight = 1
