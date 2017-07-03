@@ -1,9 +1,20 @@
 {{ partial "header" . }}
 <article>
-	<header>
-		<h1>{{ .Title }}</h1>
-	</header>
+	<header>{{ partial "title" . }}</header>
 	{{ .Content }}
-	<hr/>
+	<nav>
+	{{ if .PrevInSection }}
+		<a class="prev-post" href="{{.PrevInSection.Permalink}}">
+			<img class="icon-text" src="/img/prev.svg"/>
+			{{- .PrevInSection.Title -}}
+		</a>
+	{{ end }}
+	{{ if .NextInSection }}
+		<a class="next-post" href="{{.NextInSection.Permalink}}">
+			{{- .NextInSection.Title -}}
+			<img class="icon-text" src="/img/next.svg"/>
+		</a>
+	{{ end }}
+	</nav>
 </article>
 {{ partial "footer" . }}

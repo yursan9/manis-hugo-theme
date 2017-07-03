@@ -1,0 +1,11 @@
+<meta name="description" content="
+{{- if .IsPage -}}
+	{{- if .Description -}}
+	{{ .Description }}
+	{{- else -}}
+	{{ .Summary }}
+	{{- end -}}
+{{- else if .IsHome -}}
+	{{ .Site.Params.Description }}
+{{- end -}}
+">

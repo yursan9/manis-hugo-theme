@@ -10,7 +10,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-- #Grid
+- #Container
 - #Base Styles
 - #Typography
 - #Links
@@ -24,7 +24,7 @@
 - #Media Queries
 */
 
-/* #Grid
+/* #Container
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
@@ -33,69 +33,6 @@
   margin: 0 auto;
   padding: 0 2rem;
   box-sizing: border-box;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-}
-.col {
-  flex: 1;
-  margin-bottom: .5rem;
-}
-.last-mobile {
-  -webkit-order: 1;
-  -moz-order: 1;
-  -ms-order: 1;
-  -o-order: 1;
-  order: 1;
-}
-
-/* For devices larger than 400px */
-@media (min-width: 40rem) {
-  .container {
-    width: 85%;
-    padding: 0;
-  }
-}
-
-/* For devices larger than 550px */
-@media (min-width: 40rem) {
-  .container { width: 80%; }
-  .row {
-    flex-direction: row;
-  }
-
-  .row .col.full {
-    flex: 0 0 100%;
-  }
-  .row .col.half {
-    flex: 0 0 50%;
-  }
-  .row .col.one-third {
-    flex: 0 0 33.3333%;
-  }
-  .row .col.two-third {
-    flex: 0 0 66.6666%;
-  }
-  .row .col.one-fourth {
-    flex: 0 0 25%;
-  }
-  .row .col.three-fourth {
-    flex: 0 0 75%;
-  }
-
-  .last-mobile {
-    -webkit-order: 0;
-    -moz-order: 0;
-    -ms-order: 0;
-    -o-order: 0;
-    order: 0;
-  }
 }
 
 
@@ -115,7 +52,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.6em;
   line-height: 1.7;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
@@ -127,23 +64,23 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 300;
   color: #222;
   font-family: 'Raleway', sans-serif;
 }
 h1 {
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   line-height: 1.25;
   letter-spacing: -.1rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 1.25;
   letter-spacing: -.1rem;
 }
 h3 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   line-height: 1.3;
   letter-spacing: -.1rem;
 }
@@ -153,62 +90,46 @@ h4 {
   letter-spacing: -.08rem;
 }
 h5 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   letter-spacing: -.05rem;
 }
 h6 {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   letter-spacing: 0;
 }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 { font-size: 4.0rem; }
-  h2 { font-size: 3.6rem; }
-  h3 { font-size: 3.0rem; }
+  h1 { font-size: 3.6rem; }
+  h2 { font-size: 3.0rem; }
+  h3 { font-size: 2.8rem; }
   h4 { font-size: 2.4rem; }
-  h5 { font-size: 1.8rem; }
-  h6 { font-size: 1.5rem; }
+  h5 { font-size: 2.0rem; }
+  h6 { font-size: 1.7rem; }
 }
 
 p { margin-top: 0; }
 
 #brand {
-  text-align: center;
-  padding-top: 1rem;
+  text-align: left;
 }
-@media (min-width: 40rem) {
-  #brand {
-    text-align: left;
-    padding-top: 0rem;
-  }
-}
-
 #brand h1 {
-  font-size: 4.2rem;
-  margin-bottom: -.5rem;
+  margin-bottom: -.2rem;
   font-weight: bold
 }
 #brand h5 {
-  font-size: 2rem;
   color: #aaa;
+  margin-bottom: -.2rem;
 }
 
 
 /* #Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1eaedb;
-  text-decoration: none;
-}
-a:hover { color: #0fa0ce; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-nav a {
-  color: #777;
-}
-nav a:hover { color: #1eaedb; }
 
 /* #Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -231,17 +152,18 @@ li {
 }
 
 ul.no-bullet {
-  margin-left: 1.5rem;
+  margin-left: 0;
   margin-bottom: 1.5rem;
 }
 @media (min-width: 40rem) {
   ul.no-bullet {
     list-style: none;
-    margin-left: 1.5rem;
+    margin-left: 0;
   }
 }
-.no-bullet a {
-  text-decoration: none;
+.no-bullet li {
+  margin-left: 0;
+  font-size: 1.8rem;
 }
 .no-bullet span {
   display: none;
@@ -319,34 +241,7 @@ blockquote cite a {
 
 /* #Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.navbar {
-  background: #f7f7f7;
-  margin: 0 -2rem;
-}
-@media (min-width: 40rem) {
-  .navbar {
-    background: transparent;
-  }
-}
-
-.to-up {
-  text-align: center;
-  font-size: 2rem;
-}
-@media (min-width: 40rem) {
-  .to-up {
-    text-align: right;
-  }
-}
-.to-up span {
-  display: none;
-}
-@media (min-width: 40rem) {
-  .to-up span {
-    display: inline;
-  }
-}
-
+.bar a { color: #777; }
 .bar ul {
   list-style: none;
   margin: 0;
@@ -354,20 +249,31 @@ blockquote cite a {
 }
 .bar li {
   display: inline;
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   margin-right: 1rem;
+  margin-left: 0;
+}
+@media (min-width: 40rem) {
+  .bar li {
+    font-size: 2.2rem;
+  }
+}
+
+.next-post {
+  display: block;
+  text-align: right;
+}
+.prev-post {
+  display: block;
+  text-align: left;
+}
+
+.pagination {
+  font-size: 2rem;
 }
 
 /* #Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
-  margin-bottom: 1rem; }
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1.5rem; }
 pre,
 blockquote,
 dl,
@@ -375,41 +281,23 @@ figure,
 table,
 p,
 ul,
-ol,
-form {
+ol {
   margin-bottom: 2.5rem; }
-section h4 {
-  margin-bottom: .5rem;
-}
-footer p {
-  margin-bottom: 0;
-}
 
 /* #Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box;
-}
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-.u-pull-right { float: right; }
-.u-pull-left { float: left; }
-
 .u-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
 }
 @media (min-width: 55rem) {
-  .u-header { padding-top: 3rem; }
+  .u-header { padding-top: 1rem; }
 }
 @media (min-width: 75rem) {
-  .u-header { padding-top: 8rem; }
+  .u-header { padding-top: 3rem; }
 }
 
 .u-footer {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -431,7 +319,6 @@ img {
   width: 1em;
   height: 1em;
   position: relative;
-  fill: #fff;
 }
 .icon-text {
   top: .13em;

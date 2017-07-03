@@ -1,0 +1,9 @@
+<title>
+	{{- if .IsHome -}}
+	{{ .Site.Title }}
+	{{- else if eq .Kind "taxonomy" -}}
+	{{ .Data.Singular | title }}: {{ .Title }} - {{ .Site.Title }}
+	{{- else if ( or .IsNode .IsPage ) -}}
+	{{ .Title }} - {{ .Site.Title }}
+	{{- end -}}
+</title>

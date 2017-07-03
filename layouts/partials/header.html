@@ -2,5 +2,9 @@
 <html lang="{{.Language}}">
 {{ partial "meta" . }}
 <body>
-{{ partial "nav" . }}
+<header class="container">
+	<div class="u-header">
+		{{ partial "navbar" . }}
+	</div>
+</header>
 <main class="container">

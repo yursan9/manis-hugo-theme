@@ -1,19 +1,25 @@
 {{ partial "header" . }}
-{{ $latestcount := .Site.Params.latestcount | default 5 }}
-<section>
-	<h4>{{ T "latestPost" }}</h4>
-	<ul class="no-bullet">
-		{{- range (first $latestcount (where .Pages "Section" "blog")) -}}
-		{{ partial "li" . }}
-		{{- end -}}
-	</ul>
-</section>
-<section>
-	<h4>{{ T "latestWork" }}</h4>
-	<ul class="no-bullet">
-		{{- range (first $latestcount (where .Pages "Section" "work")) -}}
-		{{ partial "li" . }}
-		{{- end -}}
-	</ul>
-</section>
+<article>
+	<header>
+		{{ partial "title" . }}
+		{{ with .Content }}{{.}}{{ end }}
+	</header>
+{{ $latestcount := .Site.Params.LatestCount | default 3 }}
+	<section>
+		<h4>{{ T "latestPost" }}</h4>
+		<ul class="no-bullet">
+			{{- range (first $latestcount (where .Pages "Section" "blog")) -}}
+			{{ partial "li" . }}
+			{{- end -}}
+		</ul>
+	</section>
+	<section>
+		<h4>{{ T "latestWork" }}</h4>
+		<ul class="no-bullet">
+			{{- range (first $latestcount (where .Pages "Section" "work")) -}}
+			{{ partial "li" . }}
+			{{- end -}}
+		</ul>
+	</section>
+</article>
 {{ partial "footer" . }}

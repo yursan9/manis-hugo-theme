@@ -1,16 +1,14 @@
 {{ partial "header" . }}
-<section>
-	<h2>{{ .Title | title }}</h2>
-	{{ with .Content }}{{.}}{{ end }}
-</section>
-{{ range .Pages.GroupByDate "Jan, 2006" }}
-<section>
-	<h4>{{ .Key }}</h4>
+<article>
+	<header>
+		{{ partial "title" . }}
+		{{ with .Content }}{{.}}{{ end }}
+	</header>
 	<ul class="no-bullet">
-	    {{ range .Pages }}
+	    {{ range .Paginator.Pages }}
 	    {{ partial "li" . }}
 	    {{ end }}
 	</ul>
-</section>
-{{ end }}
+	{{ partial "paginator" . }}
+</article>
 {{ partial "footer" . }}
