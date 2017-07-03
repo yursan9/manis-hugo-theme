@@ -4,20 +4,8 @@ other = "Latest Posts"
 [latestWork]
 other = "Latest Works"
 
-[sectionAbout]
-other = "About"
-
-[sectionBlog]
-other = "Blog"
-
-[sectionWork]
-other = "Work"
-
 [license]
 other = "License"
-
-[backtoAbout]
-other = "Back to About"
 
 [toUp]
 other = "Back to Up"
@@ -27,7 +15,3 @@ other = "Home Page"
 
 [usedTheme]
 other = "Theme used:"
-
-[readingTime]
-one = "One minute read"
-other = "{{.Count}} minutes read"
