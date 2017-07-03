@@ -11,9 +11,10 @@ Like I said, it's really minimal. Its doesn't even have grid or anything nice li
 
 - Configurable color!
 - Code Highlighting (HighlightJS).
+- Responsive.
 - Social Icon Links.
 - No Grid no worry.
-- Can be translated.
+- Translatable.
 
 ![Manis' Colorful scheme]()
 
