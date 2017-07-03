@@ -52,8 +52,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  font-size: 1.6em;
+  line-height: 1.7;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
   color: #444;
@@ -95,7 +95,7 @@ h5 {
   letter-spacing: -.05rem;
 }
 h6 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   letter-spacing: 0;
 }
