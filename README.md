@@ -3,7 +3,7 @@
 It's a minimalist and responsive theme for Hugo Static Site Generator. It's
 name taken from Indonesian Language for *Sweet*.
 
-![Manis' Homepage view]()
+![Manis' Homepage view](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/tn.png)
 
 ## Features
 
@@ -16,7 +16,7 @@ Like I said, it's really minimal. Its doesn't even have grid or anything nice li
 - No Grid no worry.
 - Translatable.
 
-![Manis' Colorful scheme]()
+![Manis' Colorful scheme](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/blue-red.png)
 
 ## Installation
 
