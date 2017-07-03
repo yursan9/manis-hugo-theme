@@ -1,12 +1,14 @@
 {{ partial "header" . }}
-<section>
-	{{ partial "title" . }}
-	{{ with .Content }}{{.}}{{ end }}
+<article>
+	<header>
+		{{ partial "title" . }}
+		{{ with .Content }}{{.}}{{ end }}
+	</header>
 	<ul class="no-bullet">
 	    {{ range .Paginator.Pages }}
 	    {{ partial "li" . }}
 	    {{ end }}
 	</ul>
 	{{ partial "paginator" . }}
-</section>
+</article>
 {{ partial "footer" . }}
