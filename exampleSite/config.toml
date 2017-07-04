@@ -10,7 +10,7 @@ canonifyURL = true
 	tag = "tags"
 
 [params]
-	debugCSS = true							# If false use use minified CSS (ui.min.css)
+	debugCSS = false						# If false use use minified CSS (ui.min.css)
 	# Site meta description
 	description = "Sweet little Hugo's theme for personal website or blog."
 	tagline = "Nothing sweeter than this"	# Site's Tagline (Subtitle or Keyword)
