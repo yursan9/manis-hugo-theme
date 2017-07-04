@@ -6,8 +6,10 @@ pluralizeListTitles = false
 paginate = 10								# Minimum number of item before paginate navigation show up
 canonifyURL = true
 
+
 [taxonomies]
 	tag = "tags"
+
 
 [params]
 	debugCSS = false						# If false use use minified CSS (ui.min.css)
@@ -36,8 +38,10 @@ canonifyURL = true
 	github = "https://github.com/yursan9/"
 	twitter = "https://twitter.com/yuri_boya"
 
-# Edit this if you want to translate your blog
+
+# Language Configuration
 defaultContentLanguage = "en"
+# Edit this if you want to translate your blog
 #[languages.in]
 #	lang = "in"
 #	languageName = "Bahasa Indonesia"
