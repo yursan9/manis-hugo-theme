@@ -23,7 +23,7 @@ canonifyURL = true
 	head404 = "Sorry, I can find what you want."
 	sub404 = "Back to <a href='/'>Home</a>."
 
-	colorTheme = "#f55"					# Color of your website
+	colorTheme = "#ff8181"					# Color of your website
 	latestCount = 3							# Maximum number of item in Latest Posts or Works
 	faviconImg = ""							# Path to site's favicon image
 	dateFmt = "Jan 02, 2006"				# Date format in item list
