@@ -29,7 +29,7 @@ git clone https://github.com/yursan9/manis-hugo-theme themes/manis
 
 ## Configuration
 
-For configuration example you can look at the `example/config.toml` (and copy that too!). I put some commentary to, hopefully, guide you at using this theme.
+For configuration example you can look at the `exampleSite/config.toml` (and copy that too!). I put some commentary to, hopefully, guide you at using this theme.
 
 ### Making Own Navigation Bar
 
