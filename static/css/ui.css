@@ -167,6 +167,9 @@ ul.no-bullet {
 }
 .no-bullet span {
   display: none;
+  font-size: 1.5rem;
+  color: #666;
+  font-family: monospace;
 }
 @media (min-width: 40rem) {
   .no-bullet span {
@@ -220,7 +223,7 @@ td:last-child {
 blockquote {
   box-sizing: border-box;
   margin: 1.75em 0 1.75em 0;
-  padding: 0 0 0 1.75em;
+  padding: 0 0 0 1.25em;
   border-left: #1eaedb 0.4em solid;
 }
 
