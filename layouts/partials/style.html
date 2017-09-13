@@ -1,6 +1,8 @@
 <style>
 	a { color: {{ .Site.Params.ColorTheme }}; }
-	blockquote { border-left-color: {{ .Site.Params.ColorTheme }}; }
+	blockquote {
+		border-left-color: {{ .Site.Params.ColorTheme }};
+		border-right-color: {{ .Site.Params.ColorTheme }}; }
 	.bar a:hover {
 		color: {{ .Site.Params.ColorTheme }};
 		text-decoration: none; }

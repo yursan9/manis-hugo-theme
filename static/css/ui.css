@@ -223,19 +223,25 @@ td:last-child {
 blockquote {
   box-sizing: border-box;
   margin: 1.75em 0 1.75em 0;
-  padding: 0 0 0 1.25em;
-  border-left: #1eaedb 0.4em solid;
+  padding: 0 1em 0 1em;
+  border-left:0.4em solid;
 }
 
-blockquote p { margin-bottom: 0; }
+@media (min-width: 55rem) {
+  blockquote {
+    margin: 1.75em -2em 1.75em -2em;
+    padding: 0 1.5em 0 1.5em;
+    border-right:0.4em solid;
+  }
+}
 
-blockquote cite {
+blockquote p:last-of-type cite {
   display: block;
   text-align: right;
   margin-right: 1rem;
 }
 
-blockquote cite:before { content: "― "; }
+blockquote p:last-of-type cite:before { content: "― "; }
 
 blockquote cite a {
   font-style: italic;
