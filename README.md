@@ -14,6 +14,7 @@ Like I said, it's really minimal. Its doesn't even have grid or anything nice li
 - Responsive.
 - Social Icon Links.
 - No Grid no worry.
+- Disqus Support
 - Translatable.
 
 ![Manis' Colorful scheme](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/blue-red.png)

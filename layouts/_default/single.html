@@ -17,4 +17,7 @@
 	{{ end }}
 	</nav>
 </article>
+{{ if in .Site.Params.DisqusSections .Section }}
+	{{ partial "disqus" . }}
+{{ end }}
 {{ partial "footer" . }}
