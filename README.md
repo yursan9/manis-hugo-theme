@@ -14,7 +14,7 @@ Like I said, it's really minimal. Its doesn't even have grid or anything nice li
 - Responsive.
 - Social Icon Links.
 - No Grid no worry.
-- Disqus Support
+- Disqus Support.
 - Translatable.
 
 ![Manis' Colorful scheme](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/blue-red.png)
@@ -31,6 +31,16 @@ git clone https://github.com/yursan9/manis-hugo-theme themes/manis
 ## Configuration
 
 For configuration example you can look at the `exampleSite/config.toml` (and copy that too!). I put some commentary to, hopefully, guide you at using this theme.
+
+### Disqus Configuration
+To add Disqus support, edit your site `config.toml`. Add your discus' shortname to `disqusShortname` and add list of sections that you want to support disqus to `params.disqusSections`:
+
+```toml
+disqusShortname = "your-disqus-shortname"
+
+[params]
+	disqusSections = ["blog"]
+```
 
 ### Making Own Navigation Bar
 
