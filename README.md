@@ -11,6 +11,7 @@ Like I said, it's really minimal. Its doesn't even have grid or anything nice li
 
 - Configurable color!
 - Code Highlighting (HighlightJS).
+- Print.css (for single post only)
 - Responsive.
 - Social Icon Links.
 - No Grid no worry.
