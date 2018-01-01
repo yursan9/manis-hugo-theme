@@ -11,16 +11,18 @@
 	<h1>{{ .Title }}</h1>
 	<h5>
 		<time datetime="{{.Date}}">{{ .Date.Format .Site.Params.DateFmt }}</time>
-		{{ with .Params.tags -}}
-		-
-			{{ range . }}
-			<a href="/tags/{{.}}">{{.}}</a>
-			{{ end }}
-		{{- end -}}
-		{{- with .Params.workURL -}}
-		-
-		<a href="{{.}}">{{ T "workHomepage" }}</a>
-		{{- end -}}
+		<span class="no-print">
+			{{ with .Params.tags -}}
+			-
+				{{ range . }}
+				<a href="/tags/{{.}}">{{.}}</a>
+				{{ end }}
+			{{- end -}}
+			{{- with .Params.workURL -}}
+			-
+			<a href="{{.}}">{{ T "workHomepage" }}</a>
+			{{- end -}}
+		<span>
 	</h5>
 	<!-- Taxonomy Page -->
 	{{- else if eq .Kind "taxonomy" -}}

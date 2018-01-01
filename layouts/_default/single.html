@@ -2,7 +2,7 @@
 <article>
 	<header>{{ partial "title" . }}</header>
 	{{ .Content }}
-	<nav>
+	<nav class="no-print">
 	{{ if .PrevInSection }}
 		<a class="prev-post" href="{{.PrevInSection.Permalink}}">
 			<img class="icon-text" src="/img/prev.svg"/>

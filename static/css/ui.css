@@ -21,6 +21,7 @@
 - #Navigation
 - #Spacing
 - #Utilities
+- #Print
 - #Media Queries
 */
 
@@ -101,7 +102,7 @@ h6 {
 }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+@media (min-width: 55rem) {
   h1 { font-size: 3.6rem; }
   h2 { font-size: 3.0rem; }
   h3 { font-size: 2.8rem; }
@@ -335,6 +336,25 @@ img {
 .icon-social {
   width: 3rem;
   height: 3rem;
+}
+
+
+/* #Print
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media print {
+  .no-print {
+    display: none;
+  }
+  
+  pre > code {
+    white-space: pre-wrap;
+  }
+  
+  img {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
 }
 
 /* #Media Queries
