@@ -4,8 +4,8 @@
 <body>
 	<main class="container">
 		<hgroup id="brand" class="u-header">
-			<h1>{{ .Site.Params.Head404 | safeHTML }}</h1>
-			<h5>{{ .Site.Params.Sub404 | safeHTML }}</h5>
+			<h1>{{ .Site.Params.Head404 | default "Sorry, I can't find what you want." | safeHTML }}</h1>
+			<h5>{{ .Site.Params.Sub404 | default "Back to <a href='/'>Home</a>." | safeHTML }}</h5>
 		</hgroup>
 		<hr class="sep"/>
 	</main>

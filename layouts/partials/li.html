@@ -1,4 +1,5 @@
 <li>
-	<span><time datetime="{{.Date}}">{{ .Date.Format .Site.Params.DateFmt }}</time></span>
+	{{ $dateformat := .Site.Params.DateFmt | default "Jan 02, 2006" }}
+	<span><time datetime="{{.Date}}">{{ .Date.Format $dateformat }}</time></span>
 	<a href="{{ .Permalink }}">{{ .Title }}</a>
 </li>

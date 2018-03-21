@@ -10,7 +10,8 @@
 	{{- else if eq .Kind "page" -}}
 	<h1>{{ .Title }}</h1>
 	<h5>
-		<time datetime="{{.Date}}">{{ .Date.Format .Site.Params.DateFmt }}</time>
+		{{ $dateformat := .Site.Params.DateFmt | default "Jan 02, 2006" }}
+		<time datetime="{{.Date}}">{{ .Date.Format $dateformat }}</time>
 		<span class="no-print">
 			{{ with .Params.tags -}}
 			-
