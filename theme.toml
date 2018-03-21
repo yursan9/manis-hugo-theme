@@ -3,10 +3,10 @@ license = "MIT"
 licenselink = "https://github.com/yursan9/manis-hugo-theme/blob/master/LICENSE.md"
 description = "Sweet little theme for personal website or blog"
 homepage = "https://github.com/yursan9/manis-hugo-theme"
-tags = ["blog", "personal"]
-features = ["minimal", "responsive"]
+tags = ["blog", "personal", "minimal", "simple", "clean", "light", "highlight.js"]
+features = ["minimal", "responsive", "simple", "clean", "light"]
 min_version = "0.24"
 
 [author]
   name = "Yurizal Susanto"
-  homepage = "http://yurizal-san.com"
+  homepage = "https://github.com/yursan9"
