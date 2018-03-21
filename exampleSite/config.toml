@@ -1,7 +1,8 @@
 baseURL = "http://yurizal-san.com/"			# Site's URL
 title = "Manis"								# Site's Name
 theme = "manis"
-copyright = "&copy; 2017 Yurizal Susanto"	# Copyright notice. Note: You can use HTML tag here
+# Copyright notice. Note: You can use HTML tag here
+copyright = "&copy; 2018 Yurizal Susanto"
 pluralizeListTitles = false
 paginate = 10								# Minimum number of item before paginate navigation show up
 canonifyURL = true
