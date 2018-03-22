@@ -3,7 +3,9 @@
 It's a minimalist and responsive theme for Hugo Static Site Generator. It's
 name taken from Indonesian Language for *Sweet*.
 
-![Manis' Homepage view](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/tn.png)
+> Note: Manis going to follow [SEMVER](https://semver.org/) scheme from now. It's mean you can clone this repository and be done with it.
+
+![Manis' Mockup Device](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/mockup.jpg)
 
 ## Features
 
@@ -18,7 +20,7 @@ Like I said, it's really minimal. Its doesn't even have grid or anything nice li
 -   Disqus Support.
 -   Translatable.
 
-![Manis' Colorful scheme](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/blue-red.png)
+![Manis' Homepage view](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/blue-red.png)
 
 ## Get Started
 
@@ -44,7 +46,7 @@ cd path/to/site/dir
 git clone https://github.com/yursan9/manis-hugo-theme themes/manis
 ```
 
-Ensure you have blog and work sections to make this theme works.
+Ensure you have `blog` and `work` sections to make this theme works.
 
 ```
 content/
@@ -57,6 +59,17 @@ content/
 ## Configuration
 
 For configuration example you can look at the `exampleSite/config.toml` (and copy that too!). I put some commentary to, hopefully, guide you at using this theme.
+
+### Change Latest Section
+
+By default this theme needs `blog` and `work` section to works. You can edit which sections show up as latest posts and latest works by editing `postSection` and `workSection`. `workSection` is optional.
+
+```toml
+# Configure which section for Latest Posts
+postSection = "blog"
+# Configure which section for Latest Works
+workSection = "work"
+```
 
 ### Disqus Configuration
 To add Disqus support, edit your site `config.toml`. Add your discus' shortname to `disqusShortname` and add list of sections that you want to support disqus to `params.disqusSections`:
