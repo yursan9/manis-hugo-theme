@@ -20,6 +20,10 @@ disqusShortname = ""                        # Your disqus shortname
 	tagline = "Nothing sweeter than this"   # Site's Tagline (Subtitle or Keyword)
 	themeAttrib = true                      # If true give attribution to this theme
 	licenseURL = "/about/license"           # URL to license file, can be outside of your domain
+	# Configure which section for Latest Posts
+	postSection = "blog"
+	# Configure which section for Latest Works
+	workSection = "work"
 
 	# 404 Configuration
 	head404 = "Sorry, I can find what you want."
