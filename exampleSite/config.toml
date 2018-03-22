@@ -1,38 +1,51 @@
-baseURL = "http://yurizal-san.com/"			# Site's URL
-title = "Manis"								# Site's Name
+# Site's URL
+baseURL = "http://yurizal-san.com/"
+# Site's Name
+title = "Manis"
 theme = "manis"
 # Copyright notice. Note: You can use HTML tag here
 copyright = "&copy; 2018 Yurizal Susanto"
 pluralizeListTitles = false
-paginate = 10								# Minimum number of item before paginate navigation show up
+# Minimum number of posts before paginate navigation show up
+paginate = 10
 canonifyURL = true
-disqusShortname = ""                        # Your disqus shortname
+# Your disqus shortname
+disqusShortname = ""
 
 [taxonomies]
 	tag = "tags"
 
-
 [params]
-	debugCSS = false                        # If false, use minified CSS (ui.min.css)
-	disqusSections = ["blog"]               # list of section support disqus comments
+	# If false, use minified CSS (ui.min.css)
+	debugCSS = false
+	# List of sections support disqus comments
+	disqusSections = ["blog"]
 	# Site meta description
 	description = "Sweet little Hugo's theme for personal website or blog."
-	tagline = "Nothing sweeter than this"   # Site's Tagline (Subtitle or Keyword)
-	themeAttrib = true                      # If true give attribution to this theme
-	licenseURL = "/about/license"           # URL to license file, can be outside of your domain
+	# Site's Tagline (Subtitle or Keyword)
+	tagline = "Nothing sweeter than this"
+	# If true give attribution to this theme
+	themeAttrib = true
+	# URL to license file, can be outside of your domain
+	licenseURL = "/about/license"
+
 	# Configure which section for Latest Posts
 	postSection = "blog"
 	# Configure which section for Latest Works
 	workSection = "work"
 
 	# 404 Configuration
-	head404 = "Sorry, I can find what you want."
+	head404 = "Sorry, I can't find what you want."
 	sub404 = "Back to <a href='/'>Home</a>."
 
-	colorTheme = "#ff8181"                  # Color of your website
-	latestCount = 3                         # Maximum number of item in Latest Posts or Works
-	faviconImg = ""                         # Path to site's favicon image
-	dateFmt = "Jan 02, 2006"                # Date format in item list
+	# Color of your website's accent
+	colorTheme = "#ff8181"
+	# Maximum number of item in Latest Posts or Works
+	latestCount = 3
+	# Path to site's favicon image
+	faviconImg = ""
+	# Date format in item list
+	dateFmt = "Jan 02, 2006"
 
 	# Code Highlighting (HighlightJS)
 	highlightJs = true
