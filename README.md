@@ -3,7 +3,7 @@
 It's a minimalist and responsive theme for Hugo Static Site Generator. It's
 name taken from Indonesian Language for *Sweet*.
 
-> Note: Manis going to follow [SEMVER](https://semver.org/) scheme from now. It's mean you can clone this repository and be done with it.
+> Note: Manis going to follow [SEMVER](https://semver.org/) scheme from now. It's mean you can clone this repository from master without breaking.
 
 ![Manis' Mockup Device](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/mockup.jpg)
 
