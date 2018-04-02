@@ -1,0 +1,11 @@
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ with $related }}
+<section id="related">
+  <h4>{{ T "seeAlso" }}</h4>
+  <ul>
+    {{ range . }}
+  	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  	{{ end }}
+  </ul>
+</section>
+{{ end }}
