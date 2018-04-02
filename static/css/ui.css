@@ -276,6 +276,9 @@ blockquote cite a {
   }
 }
 
+.post-nav {
+  margin-bottom: 2rem;
+}
 .next-post {
   display: block;
   text-align: right;
