@@ -304,6 +304,11 @@ ul,
 ol {
   margin-bottom: 2.5rem; }
 
+#brand {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
 /* #Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-header {
@@ -355,11 +360,11 @@ img {
   .no-print {
     display: none;
   }
-  
+
   pre > code {
     white-space: pre-wrap;
   }
-  
+
   img {
     display: block;
     width: 80%;
