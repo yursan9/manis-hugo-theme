@@ -181,6 +181,10 @@ ul.no-bullet {
     display: inline;
   }
 }
+.terms li>span {
+  color: #666;
+  font-family: monospace;
+}
 
 dd { margin-left: 2rem; }
 

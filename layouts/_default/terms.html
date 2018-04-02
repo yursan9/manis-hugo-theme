@@ -1,13 +1,14 @@
 {{ partial "header" . }}
-<section>
+<section class="terms">
 	{{ partial "title" . }}
 	{{ with .Content }}{{.}}{{ end }}
 	<ul style="list-style: none;">
-	    {{ range .Data.Terms.Alphabetical }}
-	    <li style="display: inline;">
-	    	<a href="/{{$.Data.Plural}}/{{.Term}}">{{ .Term }}</a>
-	    </li>
-	    {{ end }}
+		{{ range .Data.Terms.Alphabetical }}
+		<li style="display: inline;">
+			<a href="/{{$.Data.Plural}}/{{.Term}}" style="">{{ .Term }}</a>
+			<span>({{ .Count }})</span>
+		</li>
+		{{ end }}
 	</ul>
 </section>
 {{ partial "footer" . }}
