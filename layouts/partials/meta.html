@@ -15,6 +15,10 @@
 		{{ else }}
 		<link rel="stylesheet" href="/css/ui.min.css"/>
 		{{ end }}
+		
+		{{ range .Site.Params.CustomCSS }}
+		<link rel="stylesheet" href="{{ . }}"/>
+		{{ end }}
 
 		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway">
 
