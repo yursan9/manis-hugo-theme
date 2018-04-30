@@ -15,6 +15,10 @@ disqusShortname = ""
 # Edit this if you want to translate your blog
 defaultContentLanguage = "en"
 
+# Code Highlighting (Chroma)
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
 [taxonomies]
 	tag = "tags"
 
