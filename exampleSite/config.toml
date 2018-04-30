@@ -8,9 +8,10 @@ pluralizeListTitles = false
 
 # Minimum number of posts before paginate navigation show up
 paginate = 10
-canonifyURL = true
+
 # Your disqus shortname
 disqusShortname = ""
+
 # Edit this if you want to translate your blog
 defaultContentLanguage = "en"
 
@@ -50,7 +51,7 @@ defaultContentLanguage = "en"
 	dateFmt = "Jan 02, 2006"
 
 	# Code Highlighting (HighlightJS)
-	highlightJs = true
+	highlightJs = false
 	highlightJsLanguages = [ "go" ]
 	highlightJsStyle = "ocean"
 
