@@ -1,9 +1,11 @@
-baseURL = "http://yurizal-san.com/"
+baseURL = "example.com"
 title = "Manis"
 theme = "manis"
+
 # Copyright notice. Note: You can use HTML tag here
 copyright = "&copy; 2018 Yurizal Susanto"
 pluralizeListTitles = false
+
 # Minimum number of posts before paginate navigation show up
 paginate = 10
 canonifyURL = true
@@ -19,7 +21,7 @@ defaultContentLanguage = "en"
 	# If false, use minified CSS (ui.min.css)
 	debugCSS = false
 	# List of sections support disqus comments
-	disqusSections = ["blog"]
+	disqusSections = [ "blog" ]
 	# Site meta description
 	description = "Sweet little Hugo's theme for personal website or blog."
 	# Site's Tagline (Subtitle or Keyword)
