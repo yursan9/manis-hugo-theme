@@ -203,7 +203,7 @@ code {
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre;
+  white-space: pre-wrap;
   background: #2b303b;
   color: #c0c5ce;
   font-family: 'Fira Mono', monospace;
