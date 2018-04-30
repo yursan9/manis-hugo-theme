@@ -21,6 +21,9 @@ defaultContentLanguage = "en"
 [params]
 	# If false, use minified CSS (ui.min.css)
 	debugCSS = false
+	# Custom CSS
+	customCSS = []
+	
 	# List of sections support disqus comments
 	disqusSections = [ "blog" ]
 	# Site meta description
