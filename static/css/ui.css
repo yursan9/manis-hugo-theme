@@ -340,7 +340,12 @@ hr {
 }
 
 img {
-  width: 100%;
+  max-width: 100%
+}
+
+article img {
+  display: block;
+  margin: 0 auto;
 }
 
 [class^="icon"] {
