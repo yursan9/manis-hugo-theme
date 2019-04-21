@@ -2,9 +2,9 @@
 <a href="mailto:{{.}}"><img class="icon-social" src="/img/email.svg" alt="Email Me!"/></a>
 {{ end }}
 {{ with .Site.Params.Github }}
-<a href="{{.}}"><img class="icon-social" src="/img/github.svg" alt="Github"/></a>
+<a href="{{.}}" rel="me"><img class="icon-social" src="/img/github.svg" alt="Github"/></a>
 {{ end }}
 {{ with .Site.Params.Twitter }}
-<a href="{{.}}"><img class="icon-social" src="/img/twitter.svg" alt="Twitter"/></a>
+<a href="{{.}}" rel="me"><img class="icon-social" src="/img/twitter.svg" alt="Twitter"/></a>
 {{ end }}
 <a href="{{.Site.RSSLink}}" target="_blank"><img class="icon-social" src="/img/feed.svg" alt="Feed"></a>
