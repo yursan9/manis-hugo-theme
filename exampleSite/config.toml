@@ -38,7 +38,7 @@ pygmentsUseClasses = true
 	customCSS = []
 	
 	# List of sections support disqus comments
-	disqusSections = [ "post" ]
+	disqusSections = [ "blog" ]
 	# Site meta description
 	description = "Sweet little Hugo's theme for personal website or blog."
 	# Site's Tagline (Subtitle or Keyword)
