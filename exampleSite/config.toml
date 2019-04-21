@@ -3,7 +3,7 @@ title = "Manis"
 theme = "manis"
 
 # Copyright notice. Note: You can use HTML tag here
-copyright = "&copy; 2018 Yurizal Susanto"
+copyright = "&copy; 2019 Yurizal Susanto"
 pluralizeListTitles = false
 
 # Minimum number of posts before paginate navigation show up
@@ -19,6 +19,15 @@ defaultContentLanguage = "en"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+[menu]
+	[[menu.main]]
+		name = "Blog"
+		url = "/post/"
+	
+	[[menu.main]]
+		name = "About"
+		url = "/about"
+
 [taxonomies]
 	tag = "tags"
 
@@ -29,7 +38,7 @@ pygmentsUseClasses = true
 	customCSS = []
 	
 	# List of sections support disqus comments
-	disqusSections = [ "blog" ]
+	disqusSections = [ "post" ]
 	# Site meta description
 	description = "Sweet little Hugo's theme for personal website or blog."
 	# Site's Tagline (Subtitle or Keyword)
@@ -40,9 +49,9 @@ pygmentsUseClasses = true
 	licenseURL = "/about/license"
 
 	# Configure which section for Latest Posts
-	postSection = "blog"
+	postSection = "post"
 	# Configure which section for Latest Works
-	workSection = "work"
+	workSection = ""
 
 	# 404 Configuration
 	head404 = "Sorry, I can't find what you want."

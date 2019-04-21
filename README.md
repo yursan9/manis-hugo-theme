@@ -98,8 +98,23 @@ menu = "main"
 +++
 ```
 
-`title` will be the string that is shown in navigation bar and the page's title (the title doesn't need to be the same as section's directory name). `menu = "main"` is the one who make Hugo know how identify it's need to add a new item in navigation bar.
+`title` will be the string that is shown in navigation bar and the page's title (the title doesn't need to be the same as section's directory name). `menu = "main"` is the one who make Hugo know, it's need to add a new item in navigation bar.
 
+**Alternative navigation bar:**
+
+Or you can configure the navigation bar in `config.toml` with the following code:
+```
+
+[menu]
+	[[menu.main]]
+		name = "Blog"
+		url = "/post/"
+	
+	[[menu.main]]
+		name = "About"
+		url = "/about"
+
+```
 ### Other Language
 
 Manis already translated to Bahasa Indonesia. But, if you want to translate this theme to your own language, look for the example in `i18n/en.yaml` and `i18n/in.yaml`.
