@@ -30,7 +30,7 @@ If this is your first time using Hugo, and you want to use this theme. Follow th
 mkdir name_of_web
 cd name_of_web
 git clone https://github.com/yursan9/manis-hugo-theme themes/manis
-cp theme/manis/exampleSite/config.toml config.toml
+cp themes/manis/exampleSite/config.toml config.toml
 hugo new blog/_index.md
 hugo new work/_index.md
 ```
