@@ -5,7 +5,7 @@ description = "Sweet little theme for personal website or blog"
 homepage = "https://github.com/yursan9/manis-hugo-theme"
 tags = ["blog", "personal", "minimal", "simple", "clean", "light"]
 features = ["responsive", "simple", "higlight.js", "discus"]
-min_version = "0.30"
+min_version = "0.57"
 
 [author]
   name = "Yurizal Susanto"

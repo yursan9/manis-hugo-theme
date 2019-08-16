@@ -21,7 +21,7 @@ pygmentsUseClasses = true
 
 [menu]
 	[[menu.main]]
-		name = "Blog"
+		name = "Post"
 		url = "/post/"
 	
 	[[menu.main]]
@@ -37,7 +37,7 @@ pygmentsUseClasses = true
 	# Custom CSS
 	customCSS = []
 	
-	# List of sections support disqus comments
+	# List of sections that support disqus comments
 	disqusSections = [ "blog" ]
 	# Site meta description
 	description = "Sweet little Hugo's theme for personal website or blog."
@@ -48,10 +48,10 @@ pygmentsUseClasses = true
 	# URL to license file, can be outside of your domain
 	licenseURL = "/about/license"
 
-	# Configure which section for Latest Posts
-	postSection = "post"
-	# Configure which section for Latest Works
-	workSection = ""
+	# Configure which sections for Latest Posts
+	mainSections = ["post"]
+	# Configure which sections for Latest Works
+	workSections = []
 
 	# 404 Configuration
 	head404 = "Sorry, I can't find what you want."
