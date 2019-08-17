@@ -25,6 +25,7 @@
 - #Media Queries
 */
 
+
 /* #Container
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
@@ -131,7 +132,10 @@ p { margin-top: 0; }
 
 /* #Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+  color: {{ .Site.Params.ColorTheme }};
+}
 a:hover { text-decoration: underline; }
 
 
@@ -236,6 +240,7 @@ blockquote {
   margin: 1.75em 0 1.75em 0;
   padding: 0 1em 0 1em;
   border-left:0.4em solid;
+  border-left-color: {{ .Site.Params.ColorTheme }};
 }
 
 @media (min-width: 55rem) {
@@ -243,6 +248,7 @@ blockquote {
     margin: 1.75em -2em 1.75em -2em;
     padding: 0 1.5em 0 1.5em;
     border-right:0.4em solid;
+    border-right-color: {{ .Site.Params.ColorTheme }};
   }
 }
 
@@ -262,6 +268,10 @@ blockquote cite a {
 /* #Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .bar a { color: #777; }
+.bar a:hover {
+  color: {{ .Site.Params.ColorTheme }};
+  text-decoration: none;
+}
 .bar ul {
   list-style: none;
   margin: 0;
@@ -337,6 +347,14 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid #e1e1e1;
+}
+
+.sep {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left:0;
+  width: 24rem;
+  border-top: 2px solid {{ .Site.Params.ColorTheme }};
 }
 
 img {
