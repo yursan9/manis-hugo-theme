@@ -8,15 +8,9 @@
 		{{ with .Site.Params.FaviconImg }}
 		<link rel="shortcut icon" href="{{.}}">
 		{{ end }}
-		
-		{{ if .Site.Params.DebugCSS }}
-		<link rel="stylesheet" href="/css/normalize.css"/>
-		<link rel="stylesheet" href="/css/ui.css"/>
-		<link rel="stylesheet" href="/css/syntax.css"/>
-		{{ else }}
-		<link rel="stylesheet" href="/css/ui.min.css"/>
-		{{ end }}
-		
+	
+		{{ partial "style" . }}
+	
 		{{ range .Site.Params.CustomCSS }}
 		<link rel="stylesheet" href="{{ . }}"/>
 		{{ end }}
@@ -30,6 +24,4 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/{{- . -}}.min.js"></script>
 		{{ end }}
 		{{ end }}
-
-		{{ partial "style" . }}
 	</head>

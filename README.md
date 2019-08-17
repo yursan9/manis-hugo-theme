@@ -31,11 +31,11 @@ mkdir name_of_web
 cd name_of_web
 git clone https://github.com/yursan9/manis-hugo-theme themes/manis
 cp themes/manis/exampleSite/config.toml config.toml
-hugo new blog/_index.md
-hugo new work/_index.md
+hugo new blog/hello.md
 ```
 
-Edit the `config.toml` according to your preference. Then edit `content/blog/_index.md` and `content/work/_index.md` by following [this section](#making-own-navigation-bar). (Look at the `exampleSite/content` for example.)
+Edit the `config.toml` according to your preference. Then edit `content/blog/hello.md` to
+start writing your first post. (Look at the `exampleSite/content` for example.)
 
 ### Theme Only
 
@@ -62,13 +62,13 @@ For configuration example you can look at the `exampleSite/config.toml` (and cop
 
 ### Change Latest Section
 
-By default this theme needs `blog` and `work` section to works. You can edit which sections show up as latest posts and latest works by editing `postSection` and `workSection`. `workSection` is optional.
+You can edit which sections show up as latest posts and latest works by editing `mainSections` and `workSections`. `workSections` is optional.
 
 ```toml
-# Configure which section for Latest Posts
-postSection = "blog"
-# Configure which section for Latest Works
-workSection = "work"
+# Configure which sections for Latest Posts
+mainSections = ["blog", "post"]
+# Configure which sections for Latest Works
+workSections = ["work"]
 ```
 
 ### Disqus Configuration
@@ -83,38 +83,20 @@ disqusShortname = "your-disqus-shortname"
 
 ### Making Own Navigation Bar
 
-Top navigation bar in Manis is made automatically by making new `section/_index.md`. Example if you want to add new `about` section, you can do the following command:
+Top navigation bar in Manis is made by configuring the navigation bar in `config.toml` with the following code:
 
 ```
-hugo new about/_index.md
-```
-
-Edit the file `content/about/_index.md` and make sure the front matter is formatted like this:
-
-```toml
-+++
-title = "Get To Know Me"
-menu = "main"
-+++
-```
-
-`title` will be the string that is shown in navigation bar and the page's title (the title doesn't need to be the same as section's directory name). `menu = "main"` is the one who make Hugo know, it's need to add a new item in navigation bar.
-
-**Alternative navigation bar:**
-
-Or you can configure the navigation bar in `config.toml` with the following code:
-```
-
 [menu]
-	[[menu.main]]
-		name = "Blog"
-		url = "/post/"
-	
-	[[menu.main]]
-		name = "About"
-		url = "/about"
+    [[menu.main]]
+        name = "Blog"
+        url = "/post/"
+
+    [[menu.main]]
+        name = "About"
+        url = "/about"
 
 ```
+
 ### Other Language
 
 Manis already translated to Bahasa Indonesia. But, if you want to translate this theme to your own language, look for the example in `i18n/en.yaml` and `i18n/in.yaml`.

@@ -5,22 +5,22 @@
 		{{ with .Content }}{{.}}{{ end }}
 	</header>
 	{{ $latestcount := .Site.Params.LatestCount | default 3 }}
-	{{ $postsection := .Site.Params.PostSection | default "post" }}
 	<section>
 		<h4>{{ T "latestPost" }}</h4>
 		<ul class="no-bullet">
-			{{- range (first $latestcount (where .Pages "Section" $postsection)) -}}
+			{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+			{{- range (first $latestcount $pages) -}}
 			{{ partial "li" . }}
 			{{- end -}}
 		</ul>
 	</section>
 
-	{{ $worksection := .Site.Params.WorkSection | default "work" }}
-	{{ with .Site.GetPage "section" $worksection }}
+	{{ $pages := where site.RegularPages "Type" "in" .Site.Params.WorkSections }}
+	{{ if ne (len $pages) 0 }}
 	<section>
 		<h4>{{ T "latestWork" }}</h4>
 		<ul class="no-bullet">
-			{{- range (first $latestcount (where .Pages "Section" $worksection)) -}}
+			{{- range (first $latestcount $pages) -}}
 			{{ partial "li" . }}
 			{{- end -}}
 		</ul>
