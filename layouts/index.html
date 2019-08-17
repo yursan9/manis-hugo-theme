@@ -16,11 +16,11 @@
 	</section>
 
 	{{ $pages := where site.RegularPages "Type" "in" .Site.Params.WorkSections }}
-	{{ if eq (len $pages) 0 }}
+	{{ if ne (len $pages) 0 }}
 	<section>
 		<h4>{{ T "latestWork" }}</h4>
 		<ul class="no-bullet">
-			{{- range (first $latestcount .) -}}
+			{{- range (first $latestcount $pages) -}}
 			{{ partial "li" . }}
 			{{- end -}}
 		</ul>
