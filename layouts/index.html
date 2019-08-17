@@ -15,12 +15,11 @@
 		</ul>
 	</section>
 
-	{{ $worksections := .Site.Params.WorkSections | default [] }}
-	{{ with $worksections }}
+	{{ with .Site.Params.WorkSections }}
 	<section>
 		<h4>{{ T "latestWork" }}</h4>
 		<ul class="no-bullet">
-			{{ $pages := where .Pages "Section" . }}
+			{{ $pages := where site.RegularPages "Type" "in" . }}
 			{{- range (first $latestcount $pages) -}}
 			{{ partial "li" . }}
 			{{- end -}}
