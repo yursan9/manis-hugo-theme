@@ -49,16 +49,16 @@ pygmentsUseClasses = true
 	licenseURL = "/about/license"
 
 	# Configure which sections for Latest Posts
-	mainSections = ["post"]
+	mainSections = ["blog", "post"]
 	# Configure which sections for Latest Works
-	workSections = []
+	workSections = ["work"]
 
 	# 404 Configuration
 	head404 = "Sorry, I can't find what you want."
 	sub404 = "Back to <a href='/'>Home</a>."
 
 	# Color of your website's accent
-	colorTheme = "#ff8181"
+	colorTheme = "#ff6565"
 	# Maximum number of item in Latest Posts or Works
 	latestCount = 3
 	# Path to site's favicon image
