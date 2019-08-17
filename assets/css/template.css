@@ -305,6 +305,10 @@ blockquote cite a {
   font-size: 2rem;
 }
 
+.pagination img {
+  display: inline;
+}
+
 /* #Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 pre,
