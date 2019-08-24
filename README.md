@@ -3,9 +3,21 @@
 It's a minimalist and responsive theme for Hugo Static Site Generator. It's
 name taken from Indonesian Language for *Sweet*.
 
-> Note: Manis going to follow [SEMVER](https://semver.org/) scheme from now. It's mean you can clone this repository from master without breaking.
-
 ![Manis' Mockup Device](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/mockup.jpg)
+
+## Table of Contents
+
+- [Features](https://github.com/yursan9/manis-hugo-theme#features)
+- [Get Started](https://github.com/yursan9/manis-hugo-theme#get-started)
+  + [Theme Only](https://github.com/yursan9/manis-hugo-theme#theme-only)
+- [Configuration](https://github.com/yursan9/manis-hugo-theme#configuration)
+  + [Change Latest Section](https://github.com/yursan9/manis-hugo-theme#change-latest-section)
+  + [Custom CSS](https://github.com/yursan9/manis-hugo-theme#custom-css)
+  + [Disqus Configuration](https://github.com/yursan9/manis-hugo-theme#disqus-configuration)
+  + [Making Own Navigation Bar](https://github.com/yursan9/manis-hugo-theme#making-own-navigation-bar)
+  + [Other Language](https://github.com/yursan9/manis-hugo-theme#other-language)
+- [Development](https://github.com/yursan9/manis-hugo-theme#development)
+- [License](https://github.com/yursan9/manis-hugo-theme#license)
 
 ## Features
 
@@ -71,6 +83,27 @@ mainSections = ["blog", "post"]
 workSections = ["work"]
 ```
 
+### Custom CSS
+If you want to make a change for this theme, other than forking, you can also supplied custom CSS. Maybe you want to change the font or size of image or icon, then custom CSS is your pal.
+
+First, edit your `config.toml`, add the custom CSS filenames to `custom CSS`. You can supplied more than one custom CSS. Just be aware of the CSS load order.
+
+```
+[params]
+    customCSS = ["/css/icon.css"]
+```
+
+Then, make a new `static/css/icon.css` file. After that you can write your custom CSS to that file:
+
+```
+.icon-social {
+    width: 2rem;
+    height: 2rem;
+} 
+```
+
+If you follow the above instruction, you will change the size of icon on footer without forking the theme.
+
 ### Disqus Configuration
 To add Disqus support, edit your site `config.toml`. Add your discus' shortname to `disqusShortname` and add list of sections that you want to support disqus to `params.disqusSections`:
 
@@ -78,7 +111,7 @@ To add Disqus support, edit your site `config.toml`. Add your discus' shortname 
 disqusShortname = "your-disqus-shortname"
 
 [params]
-  disqusSections = ["blog"]
+    disqusSections = ["blog"]
 ```
 
 ### Making Own Navigation Bar
@@ -106,9 +139,9 @@ And then you edit the site's `config.toml` like this.
 ```toml
 defaultContentLanguage = "en"
 [languages.{Your Language Code}]
-  lang = "{Your Language Code}"
-  languageName = "{Your Language Name. example; Bahasa Indonesia or Japanese}"
-  weight = 1
+    lang = "{Your Language Code}"
+    languageName = "{Your Language Name. example; Bahasa Indonesia or Japanese}"
+    weight = 1
 ```
 
 ## Development
