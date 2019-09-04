@@ -18,6 +18,9 @@
 {{ end }}
 </nav>
 {{ partial "related" . }}
+{{ if in .Site.Params.UtterancesSections .Section}}
+	{{ partial "utterances" .}}
+{{ end }}
 {{ if in .Site.Params.DisqusSections .Section }}
 	{{ partial "disqus" . }}
 {{ end }}

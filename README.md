@@ -30,6 +30,7 @@ Like I said, it's really minimal. Its doesn't even have grid or anything nice li
 -   Social Icon Links.
 -   No Grid no worry.
 -   Disqus Support.
+-   [Utterances](https://utteranc.es) Support.
 -   Translatable.
 
 ![Manis' Homepage view](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/blue-red.png)

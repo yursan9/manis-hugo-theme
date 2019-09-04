@@ -37,8 +37,6 @@ pygmentsUseClasses = true
 	# Custom CSS
 	customCSS = []
 	
-	# List of sections that support disqus comments
-	disqusSections = [ "blog" ]
 	# Site meta description
 	description = "Sweet little Hugo's theme for personal website or blog."
 	# Site's Tagline (Subtitle or Keyword)
@@ -52,6 +50,16 @@ pygmentsUseClasses = true
 	mainSections = ["blog", "post"]
 	# Configure which sections for Latest Works
 	workSections = ["work"]
+	
+	# List of sections that support disqus comments
+	disqusSections = [ "blog" ]
+	# List of sections that support utterances comments
+	utterancesSections = [ "blog" ]
+	
+	# Utterances Configuration
+	utterancesRepo = ""
+	utterancesTheme = "github-light"
+	utterancesLabel = ""
 
 	# 404 Configuration
 	head404 = "Sorry, I can't find what you want."
