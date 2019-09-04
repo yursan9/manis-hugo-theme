@@ -1,5 +1,5 @@
-{{ theme := .Site.Params.UtterancesTheme | default "github-light" }}
-{{ label := .Site.Params.UtterancesLabel | default "" }}
+{{ $theme := .Site.Params.UtterancesTheme | default "github-light" }}
+{{ $label := .Site.Params.UtterancesLabel | default "" }}
 <script src="https://utteranc.es/client.js"
         repo="{{- .Site.Params.UtterancesRepo -}}"
         issue-term="url"
