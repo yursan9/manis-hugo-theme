@@ -214,6 +214,7 @@ pre > code {
   background: #2b303b;
   color: #c0c5ce;
   font-family: 'Fira Mono', monospace;
+  overflow-wrap: break-word;
 }
 
 /* #Tables
