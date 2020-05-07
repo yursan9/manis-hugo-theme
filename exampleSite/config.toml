@@ -1,6 +1,6 @@
 baseURL = "example.com"
 title = "Manis"
-theme = "manis"
+theme = "manis-hugo-theme"
 
 # Copyright notice. Note: You can use HTML tag here
 copyright = "&copy; 2019 Yurizal Susanto"
