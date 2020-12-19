@@ -8,3 +8,6 @@
 <a href="{{.}}"><img class="icon-social" src="/img/twitter.svg" alt="Twitter"/></a>
 {{ end }}
 <a href="{{.Site.RSSLink}}" target="_blank"><img class="icon-social" src="/img/feed.svg" alt="Feed"></a>
+{{ with .Site.Params.Twitch}}
+<a href="{{.}}"><img class="icon-social" src="/img/twitch.svg" alt="Twitch"/></a>
+{{ end }}
