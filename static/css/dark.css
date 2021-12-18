@@ -3,11 +3,11 @@ html {
 }
 
 html {
-filter: invert(1) hue-rotate(.5turn);
+filter: invert(100%) hue-rotate(180deg);
 }
 
 img:not(.icon-text, .icon-social),
 video,
 code {
-filter: hue-rotate(180deg) contrast(100%) invert(100%);
+filter: invert(100%) hue-rotate(180deg) contrast(100%);
 }
