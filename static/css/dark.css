@@ -1,0 +1,13 @@
+html {
+    background-color: #ebebeb !important;
+}
+
+html {
+filter: invert(1) hue-rotate(.5turn);
+}
+
+img:not(.icon-text, .icon-social),
+video,
+code {
+filter: hue-rotate(180deg) contrast(100%) invert(100%);
+}
