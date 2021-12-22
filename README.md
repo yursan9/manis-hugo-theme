@@ -32,6 +32,7 @@ Like I said, it's really minimal. Its doesn't even have grid or anything nice li
 -   Disqus Support.
 -   [Utterances](https://utteranc.es) Support.
 -   Translatable.
+-   Dark Mode Support.
 
 ![Manis' Homepage view](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/blue-red.png)
 
