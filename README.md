@@ -32,6 +32,7 @@ Like I said, it's really minimal. Its doesn't even have grid or anything nice li
 -   Disqus Support.
 -   [Utterances](https://utteranc.es) Support.
 -   Translatable.
+-   Dark Mode Support.
 
 ![Manis' Homepage view](https://raw.githubusercontent.com/yursan9/manis-hugo-theme/master/images/blue-red.png)
 
@@ -152,3 +153,5 @@ If you found bug, or anything that itch you. Tell me! or maybe make PR.
 ## License
 
 Manis is licensed under the MIT License. Check the [LICENSE](https://github.com/yursan9/manis-hugo-theme/blob/master/LICENSE.md) file for details.
+
+“Moon Icon” and “Sun Icon” by Font Awesome are [licensed under CC BY 4.0](https://fontawesome.com/license/free).
