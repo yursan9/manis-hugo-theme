@@ -1,8 +1,8 @@
 html {
-    background-color: #ebebeb !important;
+    background-color: #141414 !important;
 }
 
-html {
+body {
 filter: invert(100%) hue-rotate(180deg);
 }
 
